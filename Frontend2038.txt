@@ -1,0 +1,397 @@
+Web Designing: HTML,CSS, javaScript, Bootstrap, jQuery, Ajax
+------------------------------------------------------------------------------------------
+
+Why we learn HTML??
+--------------------------------------------------------------
+Languages::
+--------------------
+>> LANGUAGE IS THE WAY OF COMMUNICATIONS.
+>> IN COMPUTER WE HAVE DIFFERENT TYPES OF LANGUAGES:
+------------
+1. LOW LEVEL LANGUAGE/MAHCINE LANGUAG: 0000101010101010
+2. MIDDLE LEVEL LANGUAGE : --> C IS MIDDLE LEVEL LANGUAGE
+3. HIGH LEVEL LANGUAGE: - PYTHON, JAVA[COMPILER, INTERPRETER], C#, JAVASCRIPT ETC.
+------------------------------------------------------------------------------------
+
+1. CLIENT SIDE: [ALL WEB BROWSER OF YOUR MOBILE AND PC ARE CLIENT]
+2. SERVER SIDE:[PYTHON, JAVA,C]
+-----------------------------------------------------------------------
+>> WEB APPLICATION BASED OF CLIENT-SERVER ARCHITECTURE.
+
+------------------------------------------------------------------------------
+
+HTML:
+---------------------------------------------
+BEFORE HTML:- WE HAVE ONE LANGUAGE:
+---------------------------------------------------------
+SGML
+------
+>> IT STANDS FOR STANDARD GENERALIZED MARKUP LANGUAGE.
+>> TAGES ARE NOT FULLY SUPPORTED IN A BROWSER.
+---------------------------------------------------------------------------
+
+CLIENT[FRONTEND] 					SERVER[BACKEND]
+--------------------------------------------------------------------
+1. WEB BROWSER				1. JAVA, PYTHON, C#, C, NODE JS
+HTML
+CSS
+JAVASRIPT
+-----------------------------------------------------------------------------------------
+FRAMEWORK-FRONTEND			FRAMEWORK-BACKEND
+---------------------------------------------------------------------------------
+1. JQUERY				1. DJANGO
+2. BOOTSTRAP				2. FLASK
+3. CSS
+>> JAVASCRIPT
+---------------------------------------------------------------------------------------------------------
+
+>>TYPES OF APPLICATIONS IN THE MARKS:
+--------------------------------------------------------------------
+
+>> THERE ARE TWO TYPES OF APPLICATIONS IN THE MARKET.
+	a). GUI- Graphical User Interface
+		>> a). Windows Based app./Desktop based app
+			>> An applications that runs with the of Windows OS system.
+			>> COMPATIBILITY ISSUE: EX:- i3 500 GB, 4GB RAM
+			>> IF YOU INSTALLED FREEFIRE [COMPATIBILITY ISSUE]
+		>> b). WEB APPLICATIONS:
+			>> AN APPLICATIONS THAT RUNS WITH THE HELP OF WEB BROWSER.
+			>> IT CAN BE ACCESS ANYWHERE 
+			>> IT FOLLOWS CLIENT-SERVER ARCHITECTURE.
+		>> c). WEB SERVICES:- [XML-EXTENSIBLE MARKUP LANGUAGE]
+		>> SOAP- [SIMPLE OBJECT ACCESS PROTOCOL]
+		>> UDDI - [UNIVERSAL DESCRIPTIONS, DISVOERY AND INTEGRATION]
+		>> HTTP- [HYPER TEXT TRANSFER PROTOCOL]
+		
+		>> d). WEB API- [APPLICATION PROGRAMMING INTERFACE]
+		>> e). MOBILE/ANDROID APPS.- [IN PYTHON LIBRARY KIWI]
+
+----------------------------------------------------------------------------------------
+>> MORE ABOUT HTML:
+------------------------
+>> IT STANDS FOR HYPERTEXT MARKUP LANGUAGE.
+>> IT WAS DEVELOPER BY "TIM BERNERS LEE".
+>> IT IS A TAG BASED LANGUAGE.
+>> SGML - STANDARD GENERALIZED MARKUP LANGUAGE[TAGS ARE NOT WORKING PROPERLY]
+>> HTML IS USED TO DESCRIBE THE CONTENT OF WEB PAGES.
+>> HTML IS USED TO CREATE STATIC WEB PAGES ONLY.
+>> HYPER TEXT: <p>hello world</p>    --> if you put some text in this tag that is only access by the browser of it's functionality that is hypertext. <p></p> it means paragraph.
+-----------------------------------------------------------------------------------------------
+
+>> HTML is standard language to create web pages.
+>> IT DEFINE THE STRUCTURE AND CONTENT OF A WEBPAGE.
+
+--------------------------
+
+HOMEPAGE: FIRST PAGE OF WEBSITE.
+
+WEBPAGE: EACH INDITIVIUAL PAGE OF WEBSITE IS KNOWN AS WEB PAGES.
+
+WEBSITE: IT IS A COLLECTIONS OF WEBPAGES.
+
+---------------------------------------------------------------------------------
+TYPES OF WEBSITES:
+-------------------------
+1. STATIC WEBSITE
+	>> A WEBSITE WHOSE CONTENTS ARE FIXED[READING MODE ONLY].
+
+2. DYNAMIC WEBSITE
+	>> A WEBSITE WHOSE CONTENTS ARE CHAGE. [DYNAMIC]
+------------------------------------------------------------------------------------------------------
+
+HISTORY OF HTML:
+------------------------------------------
+
+1). BIRTH OF HTML [1991]: -
+-----------------------------
+
+>> HTML WAS CREATE BY "TIM BERNERS-LEE" IN 1991.
+>> HE DEVELOPED HTML WHILE WORKING AT CERN:European Organization for Nuclear Research
+>> THE FIRST VERSION CONTAINED ONLY ABOUT 18 PAGES.
+
+--------------------------------------------------------------
+
+2). HTML 2.0 - [1995]
+>> FIRST STANDARD VERSION OF HTML.
+>> INTRODUCED FORM, ALLOWING USERS TO ENTER DATA ON WEB PAGES.
+------------------------
+3). HTML 3.2 - [1997]
+------------
+>> PUBLISED BY THE WORLD WIDE WEB CONSORTIUM [W3C]
+>> ADDED SUPPORTS OF TABLES, APPLETS, AND TEXT FORMMATING.
+--------------------------------------------------------------
+4). HTML 4.01- [1999]
+-------------------------
+>> IMPROVED SUPPORT OF CSS [CASCADING STYLE SHEETS].
+>> ENCOURAGED SPEPERATION OF CONTENT AND PRESENTATION.
+>> BECOME THE MOST WIDELY USED VERSION FOR MANY YEARS.
+------------------------------------------------------------------------
+5). XHTML[2000]
+-----------
+>> A STRICTER VERSION OF HTML BASED ON XML RULE.
+>> RQUIRED PROPER CLOSING OF TAGS AND WELL-FORMED DOCUMENTS .
+------------
+
+6). HTML 5.0 [2014]
+--------------------
+>> MAJOR UPDATE TO HTML.
+>> ADDED MULTIMEDIA SUPPORT WITHOUT PLUGINS:
+	>> <audio>
+	>> <video>
+	>> <canvas>
+>> INTRODUCED SEMANTIC ELEMENTS:
+	>> <header>
+	>> <section>
+	>> <article>
+	>> <footer>
+>> Improved support for mobile and web applications.
+
+7). MODERN HTML
+----------------------
+>> HTML 5 IS THE CURRENT STANDARD USED BY MODERN WEBSITES.
+>> CONTINUES TO EVOLVES THROUGH UPDATES MAINTANED BY ORGANIZATIONS SUCH AS WHATWG WHATWG (Web Hypertext Application Technology Working Group) AND W3C.
+
+---------------------------------------------------------------------------------------------------------
+
+SIMPLE TIMELINE
+-----------------------
+
+YEAR 		VERSION 		MAJOR FEATURES
+---------------------------------------------------------------------------------
+1991		HTML			FIRST VERSION CREATED
+------------------------------------------------------------------
+1995		HTML 2.0		FORMS INTRODUCED
+-------------------------------------------------------------------
+1997		HTML 3.2		TABLES AND APPLETS
+--------------------------------------------------------------------
+1999		HTML 4.01		BTTER CSS SUPPORTS
+-------------------------------------------------------------------------
+2000		XHTML			XML-BASTED STRICT RULE
+--------------------------------------------------------------------------
+2014		HTML 5.0		AUDIO, VIDEO, CANVAS, SEMANTIC TAGS
+-------------------------------------------------------------------------------
+PRESNT 		HTML 5.0+		MODERN WEB DEVELOPMENT
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+>>DIFERENCE OF HYPER AND NORMAL TEXT:
+--------------------------------------------
+>> HYPER TEXT:- 
+	<p>Hello world</p> 
+	>> <p></p> if you put some text in this tag, this tag functionality is only access by the browser that means it is Hypertext
+--------------------------------
+Normal Text: Normal text is not changeable on the browser and its only readable by human. Hello world
+
+------------------------------------------------------------------------------------------
+
+TYPES OF TAGS
+--------------------------------
+
+HTML
+----
+
+THERE ARE TWO TYPES OF TAGS
+-----------------------------------
+
+1). CONTAINER TAGS/ PAIRED TAGS:
+	>> WHICH OPEN TAG AS WELL AS CLOSE TAG
+	EX:-
+	<html></html>,<title></title>,<body></body>,<div></div> etc.
+2). EMPTY TAG/UNPAIRED TAGS:
+	>> WHICH OPEN AND CLOSE ITSELF.[SELF-CLOSING TAG]
+
+	EX:-
+		<br/>,<img/>,<hr/>,<area/>,<base/>
+---------------------------------------------------------------------------------------------------------------
+
+IDE:- [Integrated Development Environment] ,, Tools are available for coding
+---------------------------------------------------------------------------
+
+>> 1.Notepad
+>> 2.Brackets :: Brackets recommends users upgrade to Phoenix Code – the next generation of Brackets, built for you
+
+>> 3. Dreamweaver
+>> 4. VSCode
+>> 5. Notepad++
+
+----------------------------------------------------------
+
+-----------------------------------------------------------------
+
+1.BASIC STRCUTURE OF HTML
+-------------------------------
+
+<!DOCTYPE html>    ---> Docoument Typed Declaration
+<html lang="eng">  ---> Docoument Typed Declaration
+
+<head>
+	<meta charset="UTF-8">  ---> Meta Information
+	<meta name="viewport" content ="widthdevice-width, initial-scale=1.0"> ---> Meta Information
+
+	<title>My Website</title>  ->> Title of pages
+	<style rel="stylesheet" href="cascading.css"></style>  ## ---> External css file 
+</head>
+<body>
+	<header>Website Header</header>  ## Header   
+	<main>                      ##  Main Content
+		<h1>Welcome to HTML</h1>
+		<p>This is a paragraph</p>
+	</main>
+	<footer>     ## Footer
+		<p>@ 2526 All Rights Reserved</p>
+	
+	</footer>
+	<script src="script.js"></script>    # External JavaScript
+</body>   
+</html>
+
+-----------------------------------------------------------------------------------------------------------
+2. SEMANTIC HTML TAGS
+--------------------------------------
+>> Semantic tags clearly describes their meaning to the browser and developer.
+--------------------------------------------------------------------------------------
+
+<header>
+<nav>
+<section>
+<article>
+<aside>
+<footer>
+<figure>
+<figcaption>
+<form>
+<table>
+<details>
+<main>
+<mark>
+
+
+
+-----------------------------------------------------------------------
+>> Non- Semantic tags not clearly describes their meaning to the browser and developer.
+
+---------------------------------
+<div>
+<span>
+---------------------------------------------------------------------------------------------
+
+3. TEXT FORMATTING TAGS
+-----------------------------------------------------
+1). <b> --> bold 
+2). <strong> ----> Important Text
+3). <i>  -----> italic text
+4). <em> --> Emphasized text
+5). <u> ---> Underline text
+6). <mark> --> Highlight text
+7). <small>  ----> Smaller text
+8). <del>   ----> Deleted Text
+9). <ins>   ----> Inserted Text
+10). <sup> ----> Superscript a²
+11). <sub>   ---> Subscript H2O
+-----------------------------------------------------------------------------------------------------
+
+
+4. LISTS IN HTML
+-------------------------------------------
+1). ORDERED LIST
+	<ol></ol>
+2). UNORDERED LIST
+	<ul></ul>
+------------------------------------------------------------------------------------
+
+5). TABLES IN HTML
+
+---------------------------------
+<table></table>   ---> Defines a table
+<tr></tr>    ---> Table row
+<th></th>    ----> Table heading
+<td></td>    ----> Table data
+<thead>     -----> Group Header
+<tbody>    -------> Group Body
+<tfoot>   -------> Group Footer
+----------------------------------------------------------------------------
+6. FORMS IN HTML
+----------------------------------------
+<form method="get">
+	<label></label>
+	<input/>
+	<select>
+		<option><option>
+	
+	</select>
+	<button/>
+</from>
+
+------------------------------------------------------------------------------------
+
+7. MEDIA IN HTML
+----------------------
+<img/>
+<audio/>
+<video/>
+------------------------------------------------------
+8.SPECIAL/SELF-CLOSING TAGS
+----------------
+<hr> ---> Horizontal line
+<img>  ---> Image
+<input/>  ---> input Field
+<meta/>   --->> Meta deta
+<link/>   ---> link css
+<source/>  ---> Media Source
+<area>    -----> Image Map Area
+<base>   -----> base URL
+<col>   ------> Column
+
+---------------------------------------------------------------------------------------------------
+
+9.HTML NEW TAGS 5+
+-----------------------------------------------
+<header>   ---> header section
+<nav>     ----> Navigation
+<section>  ---> Section
+<article>   --> article
+<aside>   -----> sidebar
+<footer>  -----> footer section
+<details> ----> Details
+<summary> ---> Summary
+<progress>  ---> Progress Bar
+<meter>    ----> Meter
+-----------------------------------------------------------------------------------------------
+
+10. Attribute of HTML Tags
+---------------------------------------
+<p  size="px"></p>
+
+--------------------------------------------
+
+Attribute 	Description		Example
+------------------------------------------------------
+id		Unique Identifier	<div id=1><div>
+---------------------------------------------------------------------------
+class 		Group of elements	<div class="box"></div>
+------------------------------------------------------------------------------
+style		Inline CSS		<p style="color:red"></p>
+--------------------------------------------------------------------
+title		Tooltip text		<p title="hello"></p>
+-----------------------------------------------------------------------------
+alt		Alternative text	<img alt="image" />
+---------------------------------------------------------------------------
+href		link reference		<a href="https://google.com">Google</a>
+------------------------------------------------------------------------
+src		Source Path		<img src="image.jpg">
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
