@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess – 64 div classes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .board-wrapper {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background: #ffffff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            border-radius: 6px;
+            padding: 10px;
+        }
+
+        .board-8x8 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 400px;
+            height: 400px;
+            border: 3px solid #111;
+            border-radius: 4px;
+        }
+
+        .label {
+            position: absolute;
+            font-size: 16px;
+            font-weight: 700;
+            color: #222;
+            user-select: none;
+            pointer-events: none;
+            line-height: 1;
+        }
+
+
+
+        .sq {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+
+        .light {
+            background: #ffffff;
+        }
+        .dark {
+            background: #000000;
+        }
+
+        .div1 { top: 0; left: 0; }
+        .div2 { top: 0; left: 50px; }
+        .div3 { top: 0; left: 100px; }
+        .div4 { top: 0; left: 150px; }
+        .div5 { top: 0; left: 200px; }
+        .div6 { top: 0; left: 250px; }
+        .div7 { top: 0; left: 300px; }
+        .div8 { top: 0; left: 350px; }
+
+        .div9 { top: 50px; left: 0; }
+        .div10 { top: 50px; left: 50px; }
+        .div11 { top: 50px; left: 100px; }
+        .div12 { top: 50px; left: 150px; }
+        .div13 { top: 50px; left: 200px; }
+        .div14 { top: 50px; left: 250px; }
+        .div15 { top: 50px; left: 300px; }
+        .div16 { top: 50px; left: 350px; }
+
+        .div17 { top: 100px; left: 0; }
+        .div18 { top: 100px; left: 50px; }
+        .div19 { top: 100px; left: 100px; }
+        .div20 { top: 100px; left: 150px; }
+        .div21 { top: 100px; left: 200px; }
+        .div22 { top: 100px; left: 250px; }
+        .div23 { top: 100px; left: 300px; }
+        .div24 { top: 100px; left: 350px; }
+
+        .div25 { top: 150px; left: 0; }
+        .div26 { top: 150px; left: 50px; }
+        .div27 { top: 150px; left: 100px; }
+        .div28 { top: 150px; left: 150px; }
+        .div29 { top: 150px; left: 200px; }
+        .div30 { top: 150px; left: 250px; }
+        .div31 { top: 150px; left: 300px; }
+        .div32 { top: 150px; left: 350px; }
+
+        .div33 { top: 200px; left: 0; }
+        .div34 { top: 200px; left: 50px; }
+        .div35 { top: 200px; left: 100px; }
+        .div36 { top: 200px; left: 150px; }
+        .div37 { top: 200px; left: 200px; }
+        .div38 { top: 200px; left: 250px; }
+        .div39 { top: 200px; left: 300px; }
+        .div40 { top: 200px; left: 350px; }
+
+        .div41 { top: 250px; left: 0; }
+        .div42 { top: 250px; left: 50px; }
+        .div43 { top: 250px; left: 100px; }
+        .div44 { top: 250px; left: 150px; }
+        .div45 { top: 250px; left: 200px; }
+        .div46 { top: 250px; left: 250px; }
+        .div47 { top: 250px; left: 300px; }
+        .div48 { top: 250px; left: 350px; }
+
+        .div49 { top: 300px; left: 0; }
+        .div50 { top: 300px; left: 50px; }
+        .div51 { top: 300px; left: 100px; }
+        .div52 { top: 300px; left: 150px; }
+        .div53 { top: 300px; left: 200px; }
+        .div54 { top: 300px; left: 250px; }
+        .div55 { top: 300px; left: 300px; }
+        .div56 { top: 300px; left: 350px; }
+
+        .div57 { top: 350px; left: 0; }
+        .div58 { top: 350px; left: 50px; }
+        .div59 { top: 350px; left: 100px; }
+        .div60 { top: 350px; left: 150px; }
+        .div61 { top: 350px; left: 200px; }
+        .div62 { top: 350px; left: 250px; }
+        .div63 { top: 350px; left: 300px; }
+        .div64 { top: 350px; left: 350px; }
+
+        .sq:hover {
+            opacity: 0.85;
+            outline: 2px solid #ffcc00;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="board-wrapper">
+        <div class="label" style="left: 50px; top: 12px;">1</div>
+        <div class="label" style="left: 100px; top: 12px;">2</div>
+        <div class="label" style="left: 150px; top: 12px;">3</div>
+        <div class="label" style="left: 200px; top: 12px;">4</div>
+        <div class="label" style="left: 250px; top: 12px;">5</div>
+        <div class="label" style="left: 300px; top: 12px;">6</div>
+        <div class="label" style="left: 350px; top: 12px;">7</div>
+        <div class="label" style="left: 400px; top: 12px;">8</div>
+
+        <div class="label" style="left: 18px; top: 50px;">A</div>
+        <div class="label" style="left: 18px; top: 100px;">B</div>
+        <div class="label" style="left: 18px; top: 150px;">C</div>
+        <div class="label" style="left: 18px; top: 200px;">D</div>
+        <div class="label" style="left: 18px; top: 250px;">E</div>
+        <div class="label" style="left: 18px; top: 300px;">F</div>
+        <div class="label" style="left: 18px; top: 350px;">G</div>
+        <div class="label" style="left: 18px; top: 400px;">H</div>
+
+        <div class="label" style="left: 430px; top: 50px;">8</div>
+        <div class="label" style="left: 430px; top: 100px;">7</div>
+        <div class="label" style="left: 430px; top: 150px;">6</div>
+        <div class="label" style="left: 430px; top: 200px;">5</div>
+        <div class="label" style="left: 430px; top: 250px;">4</div>
+        <div class="label" style="left: 430px; top: 300px;">3</div>
+        <div class="label" style="left: 430px; top: 350px;">2</div>
+        <div class="label" style="left: 430px; top: 400px;">1</div>
+
+        <div class="label" style="left: 18px; top: 430px;">A</div>
+        <div class="label" style="left: 68px; top: 430px;">B</div>
+        <div class="label" style="left: 118px; top: 430px;">C</div>
+        <div class="label" style="left: 168px; top: 430px;">D</div>
+        <div class="label" style="left: 218px; top: 430px;">E</div>
+        <div class="label" style="left: 268px; top: 430px;">F</div>
+        <div class="label" style="left: 318px; top: 430px;">G</div>
+        <div class="label" style="left: 368px; top: 430px;">H</div>
+
+        <div class="board-8x8">
+            <div class="sq div1 light"></div>
+            <div class="sq div2 dark"></div>
+            <div class="sq div3 light"></div>
+            <div class="sq div4 dark"></div>
+            <div class="sq div5 light"></div>
+            <div class="sq div6 dark"></div>
+            <div class="sq div7 light"></div>
+            <div class="sq div8 dark"></div>
+
+            <div class="sq div9 dark"></div>
+            <div class="sq div10 light"></div>
+            <div class="sq div11 dark"></div>
+            <div class="sq div12 light"></div>
+            <div class="sq div13 dark"></div>
+            <div class="sq div14 light"></div>
+            <div class="sq div15 dark"></div>
+            <div class="sq div16 light"></div>
+
+            <div class="sq div17 light"></div>
+            <div class="sq div18 dark"></div>
+            <div class="sq div19 light"></div>
+            <div class="sq div20 dark"></div>
+            <div class="sq div21 light"></div>
+            <div class="sq div22 dark"></div>
+            <div class="sq div23 light"></div>
+            <div class="sq div24 dark"></div>
+
+            <div class="sq div25 dark"></div>
+            <div class="sq div26 light"></div>
+            <div class="sq div27 dark"></div>
+            <div class="sq div28 light"></div>
+            <div class="sq div29 dark"></div>
+            <div class="sq div30 light"></div>
+            <div class="sq div31 dark"></div>
+            <div class="sq div32 light"></div>
+
+            <div class="sq div33 light"></div>
+            <div class="sq div34 dark"></div>
+            <div class="sq div35 light"></div>
+            <div class="sq div36 dark"></div>
+            <div class="sq div37 light"></div>
+            <div class="sq div38 dark"></div>
+            <div class="sq div39 light"></div>
+            <div class="sq div40 dark"></div>
+
+            <div class="sq div41 dark"></div>
+            <div class="sq div42 light"></div>
+            <div class="sq div43 dark"></div>
+            <div class="sq div44 light"></div>
+            <div class="sq div45 dark"></div>
+            <div class="sq div46 light"></div>
+            <div class="sq div47 dark"></div>
+            <div class="sq div48 light"></div>
+
+            <div class="sq div49 light"></div>
+            <div class="sq div50 dark"></div>
+            <div class="sq div51 light"></div>
+            <div class="sq div52 dark"></div>
+            <div class="sq div53 light"></div>
+            <div class="sq div54 dark"></div>
+            <div class="sq div55 light"></div>
+            <div class="sq div56 dark"></div>
+
+            <div class="sq div57 dark"></div>
+            <div class="sq div58 light"></div>
+            <div class="sq div59 dark"></div>
+            <div class="sq div60 light"></div>
+            <div class="sq div61 dark"></div>
+            <div class="sq div62 light"></div>
+            <div class="sq div63 dark"></div>
+            <div class="sq div64 light"></div>
+        </div>
+    </div>
+</body>
+</html>
+
