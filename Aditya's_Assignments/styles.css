@@ -1,0 +1,26 @@
+/* Page styles for Aditya's_Assignments/project-1.html */
+
+/* Use the logo as a lightweight, available background image.
+   If you add a bigger image later, you can just replace the URL. */
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Background */
+  background-image: url("images/statue-of-unity-kevadia-gujarat-5-attr-hero.jfif");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+
+  /* Keep content readable even with bright graphics */
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
+/* Create some spacing under the sticky navbar */
+main{
+  padding-top: 20px;
+}
+

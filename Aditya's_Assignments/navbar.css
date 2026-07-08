@@ -1,0 +1,86 @@
+/* Navbar styling for Aditya's_Assignments/project-1.html */
+
+:root {
+  --nav-text: #ffffff;
+  --nav-hover: #38bdf8; /* sky-400 */
+  --nav-accent: #22c55e; /* green-500 */
+
+  /* Default navbar (top of page) uses the hero image */
+  --nav-hero-image: url("images/statue-of-unity-kevadia-gujarat-5-attr-hero.jfif");
+  --nav-dark-overlay: rgba(0, 0, 0, 0.35);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  /* Hero background visible inside navbar at top */
+  background-image: linear-gradient(var(--nav-dark-overlay), var(--nav-dark-overlay)), var(--nav-hero-image);
+  background-size: cover;
+  background-position: center;
+
+  padding: 14px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+/* When scrolled, navbar becomes black */
+nav.nav--scrolled {
+  background-image: none; /* remove hero image */
+  background-color: #000;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  display: inline-block;
+  color: var(--nav-text);
+
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+nav a:hover {
+  color: #0b1220;
+  background: var(--nav-hover);
+
+  transform: translateY(-1px);
+}
+
+nav a:focus-visible {
+  outline: 3px solid rgba(34, 197, 94, 0.55);
+  outline-offset: 2px;
+}
+
+@media (max-width: 540px) {
+  nav {
+    padding: 12px 10px;
+  }
+
+  nav a {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+}
+
