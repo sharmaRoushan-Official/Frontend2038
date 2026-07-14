@@ -1,0 +1,18 @@
+h1{
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+/* Hey I'm CSS Comment  */

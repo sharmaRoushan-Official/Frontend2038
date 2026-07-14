@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        /* example of adjacent sibling  */
+        div+p{
+            background-color: red;
+        }
+        div+p+p{
+            background-color: chartreuse;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Example of Adjacent Sibling</h1>
+    
+    <div>
+        <!-- Direct child of Div  -->
+        <p>This is My First Paragraph.</p>
+    </div>
+
+    <p>This is My Second Paragraph.</p>
+
+    <div>
+        <!-- Direct child of div  -->
+        <p>This is My Third Paragraph</p>
+        <section>
+            <h2>Hello World</h2>
+            <!-- Indirect Child of div  -->
+            <p>This is My Fourth paragraph.</p>
+        </section>
+    </div>
+
+    <div>
+        <p>This is My Fifth Paragraph.</p>
+        <h2>This is My Sixth Heading</h2>
+        <p>This is My Sixth Paragraph.</p>
+    </div>
+    <p>Hello Ajdacent Selector how are you?</p>
+    <p>This is React JS.</p>
+</body>
+</html>

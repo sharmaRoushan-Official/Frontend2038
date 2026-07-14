@@ -381,10 +381,2461 @@ src		Source Path		<img src="image.jpg">
 -------------------------------------------------------------------------------------------
 
 
+FontAwasome: - It is a Library
+-----------------------------------------
+
+>> It contains predefined symbols, icons, fonts etc.
+
+----------------------------------------------------------------------
+>> There are tow methods to import any libarary:
+
+-----
+>> 1. CDN Link(Content Delivery Network): ==> Online live link
+
+>> 2. Local Installation.
+ 
+>> Link of FontAwasome Library:
+(https://fontawesome.com/)
+
+>> Link of CDN:
+(https://cdnjs.com/libraries/font-awesome)
+-----------------------------------------------------------------------------------------------------
+
+
+Table Tag in HTML:-
+---------------------------
+>> It consists of row and column.
+>> In html we create <table></table> tag to create table
+------------------------------------------
+<table></table>  ---> Table
+<th></th>    ------> Table Header
+<tr></tr>  -------> Table row
+<td></td>  -------> Table Data/Definition.
+------------------------------------------------------------------------------------
+Verticle
+|
+Column
+
+__
+Horizontal ----> Row
+--------------------------------------------------------------------------------------------------
 
 
 
-		
+Eid|Name|Age|Salary|Post|
+-----------------------------
+101|Aditya|19|67000|SE|
+102|Prjakta|20|87000|SE|
+--------------------------------------------------
+
+
+
+Merge Cell:
+------------------------------
+
+>> Merge Cells:
+>>> To perform merging between cells we have  two attributes
+>>> A. colspan	B.rowspan
+>> colspan: colspan is used to merge one or more than merge columns
+>> rowspan: rowspan is used to merge one or more than rows.
+>> colspan and rowspan is not an attribute of table tag. It is attribute of <th></th> and <td></td>
+
+------------------------------------------------------------------------------------------------------------------------------
+
+>> Frame in HTML
+-------------------------------------------------------------------------------
+
+>> Frameset:- It is a collections of Frames.
+>> First create frameset then put different-different frames inside frameset.
+------------------------------------------------------------------------------------------------------------------------
+>> Frameset Attributes:
+>> rows, cols
+-----------------
+>> rows:- rows = "50%" It means display  divide into tow row sections.
+------------------------
+>> Frame is used to divide the webpages  into two difference sections.
+>>> In Frame <body></body> doesn't render
+>> frame  is empty tag.
+>> <frame/>
+-----------------------------------------------------
+
+>> Frame Attributes
+------------------------------
+>> noresize ="noresize"
+>> scrolling="yes", scrolling ="no"
+-----------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+form Tag
+------------------------------------
+
+
+>> In <form></form> tag when we don't mention method attribute then it takes by default GET request.
+
+>> In GET request create Query String or URL-RE-Writing.
+>> In GET request whatever the information you type into this form it show on the browser URL.
+>> You can use method="post", when you insert the data it sends to the server and not created query string on url.
+---------------------------------------------------------------------------------------------------------------------------------------------
+The <input> Element
+
+>> The HTML <input> element can be displayed in many ways, depending on the type attribute.
+
+Type				Description
+-------------------------------------------------------------
+<input type="text">	| Displayed a single-line text input field
+--------------------------------------------------------------------
+<input type="radio">	| Displays a radio button (for selecting one of many choices)
+---------------------------------------------------------------------------------------------
+<input type="checkbox">	| Displays a checkbox(for selection zero or more of many choices
+--------------------------------------------------------------------------------------------
+<input type="numbers">	| Display only for numbers value.
+---------------------------------------------------------------------------------------------
+<input type="submit">	| Displays a submit button(for submitting the forms)
+-------------------------------------------------------------------------------------------
+<input type="button">	| Displays a clickable button
+----------------------------------------------------------------------------------------------------
+
+Elements: It takes complete width
+-------------------------------------------------------
+<address></address>
+<article></article>
+<blockquote></blockquotes>
+<canvas></canvas>
+<dd></dd>
+<div></div>
+<dl></dl>
+<dt></dt>
+<fieldset></fieldset>
+<figcaption></figcaption>
+<figure></figure>
+<footer></footer>
+<form></form>
+<h1><h6>
+<header></header>
+<hr></hr>
+<li></li>
+<main></main>
+<nav></nav>
+<noscript></noscript>
+<ol></ol>
+<ul></ul>
+<p></p>
+<pre></pre>
+<section></section>
+<table></table>
+<tfoot></tfoot>
+<video></video>
+---------------------------------------------------------------------------------------------
+
+2. Inline Element: It takes whatever is required
+------------------------------------------------------------------------------------------
+
+<a></a>
+<abbr></abbr>
+<b></b>
+<bod><bdo>
+<big></big>
+<br></br>
+<button></button>
+<cite></cite>
+<code></code>
+<dfn></dfn>
+<i></i>
+<img></img>
+<input></input>
+<kbd></kbd>
+<label</label>
+<map></map>
+<object></object>
+<output></output>
+<q></q>
+<samp></samp>
+<script></script>
+select</select>
+<small></small>
+<span></span>
+<strong></strong>
+<sub></sub>
+<textarea></textarea>
+<var></var>
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+IFrame :---- It is used to make your webpage nested.
+
+>>To implement page within another page we use the concept of iframe
+
+>> syntax:
+
+<iframe></iframe>
+
+>> It is container tag.
+--------------------------------------------------------------------------------------------------
+
+
+Audio Tag
+--------------------------
+Audio Tag:
+
+>> Audio is a container tag:
+>> syntax:
+
+<audio controls>
+<source src="path" type="audio/mp3">
+</audio>
+
+---------------------------------------------------------------------------------
+>> example
+
+<audio>
+<source src ="path" type="audio/mp3" />
+
+</audio>
+
+
+------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body>
+    <audio controls >
+        <source src="./Pardesiyon Se Na Akhiyan Milana [128 Kbps]-(SongsPk.Com.Se).mp3" type="audio/mp3" />
+    </audio>
+    <audio controls>
+        <source src="./O Ek Baar Aata Hai Din Aisa [128 Kbps]-(SongsPk.Com.Se).mp3" type="audio/mp3">
+    </audio>
+    
+    
+</body>
+</html>
+--------------------------------------------------------------
+>> Audio has Attributes:
+-----------------------------
+
+>>> Attribute 		Value			Descriptions
+------------------------------------------------------------------------
+>autoplay	autoplay		Specifies that the audio will start playing as soon as it is ready.
+
+---------------------------------------------------------------------------------------------------------
+
+>> Controls	Controls		Specifies that audio controls should be displayed (such as play/pause) buttons.
+-------------------------------------------------------------------------------------------------------------------
+>> loop		loop			Specifies that audio will start over again, every time it is finished.
+------------------------------------------------------------------------------------------------------------------
+>> muted	muted			Specifies that the audio output should be muted.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Video Tag
+--------------------
+
+<video>
+<source src="path" type="video/mp4" />
+</video>
+
+-------------------------------------------------------------------------------------------------------------------
+
+>> Video Tag Attributes:
+---------
+>> controls is property
+>> width = "600"
+>> height = "400"
+
+-----------------------------------------------------------
+>> Attribute 		value			Description
+-----------------------------------------------------------
+>> autoplay		autoplay		Specifies that the video will start paying as soon as it is ready.
+---------------------------------------
+>> controls		controls		Specifies that the video controls should displayed(such as play/pause)
+-----------------------------------------------------------------
+>> height		pixel/percentage	Sets the height of the video
+-------------------------------------------------------------------
+>> loop 		loop			Specifies that the video will start over again, every time it is finished.
+----------------------------------------------------------------------
+>>muted			muted 			Specifies that the audio output of the video should muted.
+----------------------------------------------------------------------------------
+>> preload		auto/metadata/non	specifies if and how the author think the video should be loaded when the page loads
+-----------------------------------------------------------------
+>> poster		URL			Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+-------------------------------------------------------------------------------------------------------
+>> src			url			Specifies the URL of the video file.
+
+------------------------------------
+>> width		pixel			Sets the width of the video player.
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+CSS:-
+-------------------------
+
+>> It Stands for Cascading Style Sheet.
+>> It is sued to design the layout of the webpage.
+>> CSS Saves a lot of work because with the help of CSS we can design multiple layout together.
+>> The file extension of CSS file is [.CSS]
+>> style tag is used to apply CSS in html elements.
+>> CSS is not case sensitive like html
+------------------------------------------------------------------------------------------------------------------------
+
+>> What are the ways to apply css in your webpage:
+-------------------------------------
+1. Inline CSS
+2. Internal CSS/[Embedded CSS]
+3. External CSS
+--------------------------------------------------------
+1. Inline CSS
+-----------------------------
+>> Apply CSS inside html tag.
+>> Right next the text it to decorate
+>> Inline css is not much use useful. It is used only for one line css not too much or 100 lines of code.
+------------------------------------------------------------------------------
+syntax:
+------------------
+
+<html style="attribute:value">Some text here............</html>
+
+Example:
+<p style="color:red;">Hello Paragraph</p>
+----------------------------------------------------------------------------------------------------------
+
+win+ctrl+shift+B ----> Refresh Driver
+
+
+----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS</title>
+</head>
+<body>
+    <p style="text-align: center; color: red; font-family:cursive; font-weight: bold;">EXAMPLE OF INLINE CSS</p>
+    
+</body>
+</html>
+---------------------------------------------------------------------------------------------
+
+
+2. Internal CSS
+---------------------------------
+>> Top of the document
+>> Internal css can be applied inside <head></head> tag using <style></style>
+------------------------------------------------------------------------------------------------
+
+syntax
+-----------------------
+
+selectorName{
+	attribute1:value1;
+	attribute2:value2;
+	attribute3:value3;
+	attribute4:value4;
+}
+-----------------------------------------------------------------------------------------------------
+>> TYPES OF SELECTOR IN CSS
+--------------------------------
+>> THERE ARE FOLLOWING TYPES OF SELECTOR IN CSS WHICH ARE AS FOLLOWS:
+------------------------------------------------------------------------
+1. TAG/ELEMENT SELECTOR. : css
+2. ID SELECTOR: javascript
+3. CLASS SELECTOR: bootstrap
+4. UNIVERSAL SELECTOR
+5. GROUP SELECTOR
+6. ATTRIBUTE SELECTOR
+7. CSS COMBINATOR.
+	>> CSS COMBINATORS IS SOMETHING I.E USED TO PRIVIDE THE RELATIONSHIP AMONG SELECTOR.
+	>> a). DESENDENT SELECTOR [SPACE]
+	>> b). CHILD SELECTOR: [>]
+	>> c). ADJACENT SIBLING: [+]
+	>> d). GENERAL SIBLING. [~] Tild Sign
+8. PSUDO CLASSES. 
+--------------------------------------------------------------------------------------------------
+
+1. TAG/ELEMENT SELECTOR
+-------------------------------------------
+>> SELECTOR CAN BE APPLIED OF HTML ELEMENTS LIKE:
+
+<p></p>, <body></body>,<div></div>,<span></span>
+-----------------------------------------------------------------
+
+syntax:
+	>> p is tag i.e tag selector and it is also select you all p tag in html.
+-------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blue;
+            background-color: yellow;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Internal CSS</h1>
+    <h1>Example of Internal CSS</h1>
+    <h1>Example of Internal CSS</h1>
+    
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+
+3. External CSS
+----------------------------------
+>>In External CSS we have separate html page and CSS page.
+>> It is very useful in enterprise application.
+>> When you link css using link tag you have to must be provide attribute rel="stylesheet" inside the link tag.
+>> text = "text/css" it is not mandatory.
+---------------------------------------------------------------------------------------------------------------------
+
+syntax to connect css file with html PAGE:
+<link href="" rel="stylesheet" text="text/css" />
+-------------------------------------------------------------------
+
+
+in html
+---------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS</title>
+    <link rel="stylesheet" href="../3.ExternalCSS/css/index.css">
+</head>
+<body>
+    <h1>Example of External CSS</h1>
+    <div>Hello CSS</div>
+    
+</body>
+</html>
+--------------------------------------------------------------------------------------
+In css
+--------------------
+
+
+h1{
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+body{
+    background-color: blanchedalmond;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+HTML Comment:
+-----------------------------
+<!----I'm HTML Comment---->
+
+
+<!-- Hey I'm html comment  -->
+-----------------------------------------------------------------------
+
+CSS Comment
+-----------------------------
+
+
+/* Hey I'm CSS Comment  */
+------------------------------------------------------------------------------------------------------------------------
+
+
+2. ID Selector:
+---------------------------------------------------------------------------------------------------
+
+>> IT IS USED TO PROVIDE SPECIFIC ID OF AN ELEMENET.
+>> WE CANNOT APPLY MULTIPLE ID'S OF A SINGLE ELEMENT
+>> WHEN WE CALL ID ON A PARITCULAR ELEMENT THEN WE USE [id="idName"]
+>> ID selector is used as # symbol.
+---------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Selector</title>
+    <style>
+        #po{
+            background-color: antiquewhite;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #kl{
+            background-color: aquamarine;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of ID Selector</h1>
+    <div>Hello CSS</div>
+    <p id="kl">Hello This is First Paragraph</p>
+    <p id="po">Hello This is Second Paragraph</p>
+    
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------
+
+
+3. CLASS SELECTOR
+------------------------------------------------
+>> WE CAN USE MULTIPLE CALSSES ON A SINGLE ELEMENT.
+>> IT IS REPRESENTED BY DOT(.) SYMBOL.
+>> WHILE CALLING WE CUSE CLASS="className"
+---------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+        .kl{
+            background-color: red;
+            font-size: 30px;
+        }
+        .po{
+            background-color: green;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello This is Class Selector</h1>
+    <div>Hello CSS</div>
+    <p class="kl">Hello Fist Paragraph</p>
+    <p class="po">Hello Second Paragraph</p>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Universal Selector:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+>> Whatever attributes you write inside Universal selector it automatically apply to all your html document.
+
+
+
+>> It is represented by Asterisk symbol [*]
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector</title>
+    <style>
+        /* Universal Sselector  */
+        *{
+            background-color: blueviolet;
+            color: antiquewhite;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Universal Selector Example</h1>
+    <div>Hello CSS</div>
+    <p class="kl">This is a paragraph.</p>
+    <p class="po">This is another paragraph.</p>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------
+
+5. GROUP SELECTOR
+--------------------------
+>> We can apply attributes on multiple elements together.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector</title>
+    <style>
+        div,p,h1{
+            background-color: aquamarine;
+            font-family: cursive;
+        }
+        div,p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Group Selector</h1>
+    <div>Hello CSS</div>
+    <p class="kl">This is a paragraph.</p>
+    <p class="po">This is another paragraph.</p>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------
+6. ATTRIBUTE SELECTOR
+---------------------------------------------------------------------------------------------------------------------
+>> To apply style on a particular element with the specific attribute.
+-------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* attribute selector  */
+        h1[align]{
+            text-decoration: underline;
+        }
+        /* attribute selector  */
+        p[align]{
+            font-size: 30px;
+            color:blue;
+        }
+        p{
+            font-size: 35px;
+
+        }
+        a[target]{
+            font-size: 25px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Attribute</h1>
+    <div>Hello CSS</div>
+    <p class="kl" align="center">This is a paragraph.</p>
+    <p class="po">This is another paragraph.</p>
+    <a href="../8_attributeSelector/./1_attributeSelector.html" target="__black">Click Here</a>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. CSS COMBINATOR.
+	>> CSS COMBINATORS IS SOMETHING I.E USED TO PRIVIDE THE RELATIONSHIP AMONG SELECTOR.
+	>> a). DESENDENT SELECTOR [SPACE]
+	>> b). CHILD SELECTOR: [>]
+	>> c). ADJACENT SIBLING: [+]
+	>> d). GENERAL SIBLING. [~] Tild Sign
+8. PSEUDO CLASSES. 
+>> Pseudo Selector 
+>> It is used to define the state of an element.
+>> It can be defined like.
+	a). Style of an element when we mouse over it.
+	b). Check using visited or unvisited link.
+	c). Check using Link is active or not.
+----------------
+There are four classes of pseudo selector
+1. link ---> Unvisited.
+2. visited ---> check visited state.
+3. hover -----> When mouse over it.
+4. active ----> To check link is active or not.
+------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoSelector</title>
+    <style>
+        /* 1.unvisited Link  */
+        a:link{
+            /* background-color: cyan; */
+            color: red;
+        }
+        /* 2.visited  */
+        a:visited{
+            color:rgb(239, 142, 45);
+        }
+
+        /* 3.hover  */
+        a:hover{
+            color: chartreuse;
+            background-color: white;
+        }
+
+        /* 4.active link  */
+        a:active{
+            color: rgb(48, 74, 20);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Pseudo Selector</h1>
+    <a href="../1.InlineCSS/1_inline_css.html" target="_blank">InlineCSS</a>
+    <br><br>
+    <a href="../2.InternalCSS/1_internalCSS.html" target="_blank">InternalCSS</a>
+    <br><br>
+    <a href="../3.ExternalCSS/1_externalCSS.html">ExternalCSS</a>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8. CSS Combinators.
+>> It provides relationship between styles.
+	a). Descendant [Space]
+	b). Child [>] Greater than
+	c). Adjacent Sibling [+]
+	d). General Sibling [~] tild
+-----------------------------------------------------------------------------------------------
+
+a). Descendant Selector
+------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        /* Descendant selector by Spacce  */
+        div p {
+            background-color: chartreuse;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector Example</h1>
+
+    <div class="container">
+        <p>This is First Paragraph</p>
+        <p>This is Second Paragraph</p>
+    </div>
+
+    <p>This is Third Paragraph</p>
+
+    <p>This is Fourth Paragraph</p>
+
+    <div>
+        <p>This is My Fifth Paragraph</p>
+    </div>
+    <p>This is Sixth Paragraph</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------
+
+b). Child Selector
+----------------------------
+
+>> All elements must be child to other element.
+>> It is represented by > [Greated than symbol]
+---------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        /* div>p : p is the direct child of div */
+        div>p{
+            background-color: aquamarine;
+            font-size: 32px;
+        }
+        div>section{
+            background-color: blueviolet;
+            
+        }
+        div>section>p{
+            background-color: red;
+    
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Child Selector</h1>
+    
+    <div>
+        <!-- Direct child of Div  -->
+        <p>This is My First Paragraph.</p>
+        <p>This is My Second Paragraph.</p>
+    </div>
+
+    <div>
+        <!-- Direct child of div  -->
+        <p>This is My Third Paragraph</p>
+        <section>
+            <h2>Hello World</h2>
+            <!-- Indirect Child of div  -->
+            <p>This is My Fourth paragraph.</p>
+        </section>
+    </div>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------
+
+c). Adjacent Sibling [+]
+
+>> All Elements must be adjacent with each other.
+>> It is represented by + symbol.
+----------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        /* example of adjacent sibling  */
+        div+p{
+            background-color: red;
+        }
+        div+p+p{
+            background-color: chartreuse;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Example of Adjacent Sibling</h1>
+    
+    <div>
+        <!-- Direct child of Div  -->
+        <p>This is My First Paragraph.</p>
+    </div>
+
+    <p>This is My Second Paragraph.</p>
+
+    <div>
+        <!-- Direct child of div  -->
+        <p>This is My Third Paragraph</p>
+        <section>
+            <h2>Hello World</h2>
+            <!-- Indirect Child of div  -->
+            <p>This is My Fourth paragraph.</p>
+        </section>
+    </div>
+
+    <div>
+        <p>This is My Fifth Paragraph.</p>
+        <h2>This is My Sixth Heading</h2>
+        <p>This is My Sixth Paragraph.</p>
+    </div>
+    <p>Hello Ajdacent Selector how are you?</p>
+    <p>This is React JS.</p>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------
+
+d). General Sibling
+
+>> All elements which is specified by adjacent selector to apply style on all elements.
+
+>> It is represented by [~] symbol.
+
+-----------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling</title>
+    <style>
+        div~p{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of General Sibling Selector</h1>
+
+    <div>
+        <p>This is My First Paragraph</p>
+    </div>
+
+    <p>This is my second paragraph</p>
+    <p>This is my Third paragraph</p>
+
+    <div>
+        <p>This is fouth paragraph</p>
+        <h2>This is My Second Heading Tag.</h2>
+        <p>This is Fifth paragraph</p>
+    </div>
+    <p>Hello this is adjacent selector</p>
+    <p>This is React JS.</p>
+    <p>This is Node JS</p>   
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------
+
+>> CSS is all about attribute and value.
+-----------------------------------------------------------
+>> If you have more knowledge about attribute then you have more knowledge about css.
+-----------------------------------------------------------------------------------------------
+
+BOX Model
+-----------------------------------------------
+MARGIN: WHATEVER THE SPACE OUTISE THE BOX.
+
+PADDING: WHATEVER THE SPACE INSIDE THE BORDER.
+----------------------------------------------------------------------------------------------
+
+MARGIN: 
+-------------
+>> IT CONSISTS OF FOUR PROPERTIES:-
+----------------------------------------------
+a). TOP
+b). RIGHT
+c). BOTTOM
+d). LEFT
+------------------------------------------------------------------------------------------------
+
+>> 1. IF THE MARGIN HAS FOUR VALUE.
+
+	margin: 20px 30px 45px 56px
+	>> 20px --> TOP
+	>> 30px --> RIGHT
+	>> 45px	--> BOTTOM
+	>> 56px	--> LEFT
+	>> IT MOVE CLOCK WISE DIRECTION.
+--------------------------------------------------------------------------------------
+
+>> 2. IF THE MARGIN HAS THREE VALUE.
+	MARGIN = 20px 30px 40px
+	>> 20px ---> TOP
+	>> 30px --> RIGHT and LEFT
+	>> 40px --> BOTTOM
+------------------------------------------------------------------------------------------
+>> 3. IF THE MARGIN HAS TWO VALUES
+-------------------------
+	MARGIN: 40px 50px
+	>> 40px --> TOP and BOTTOM
+	>> 50px --> RIGHT and LEFT
+----------------------------------------------------------------------------------------
+>> 4. IF THE MARGIN HAS ONE VALUE
+	MARGIN: 20px
+	>> 20px-- TOP
+	>> 20px-- RIGTH
+	>> 20px-- BOTTOM
+	>> 20px-- LEFT
+-------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Exmaple</title>
+    <style>
+        /* if you have one value  */
+        h1{
+            margin: 20px;
+        }
+        h2{
+            margin: 20px 30px;
+        }
+        h3{
+            margin:20px 15px 30px ;
+        }
+        h4{
+            margin:20px 30px 40px 50px
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Margin</h1>
+    <h2>Hello Second Margin</h2>
+    <h3>Hello Thrid Margin</h3>
+    <h4>Hello Fourth Margin</h4>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------
+Padding:
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Exmaple</title>
+    <style>
+        /* if you have one value  */
+        h1{
+            margin: 20px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        h2{
+            margin: 20px 30px;
+            border: 2px solid black;
+            padding: 10px 12px;
+        }
+        h3{
+            margin:20px 15px 30px ;
+            border: 2px solid black;
+            padding: 5px 10px 15px;
+        }
+        h4{
+            margin:20px 30px 40px 50px;
+            border: 2px solid black;
+            padding: 10px 20px 25px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Margin</h1>
+    <h2>Hello Second Margin</h2>
+    <h3>Hello Thrid Margin</h3>
+    <h4>Hello Fourth Margin</h4>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------
+
+>> Background Property
+--------------------------------------------
+
+>> These are the five background properties of CSS.
+>> These property are: backgound-image, repeat, position, size, color only work on background image.
+
+1). background-color
+2). background-image
+3). background-repeat
+4). background-position
+5). background-size
+------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properdty</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            width: 500px;
+            height: 100px;
+            margin: auto;
+            text-align: center;
+            padding-top: 40px;
+        }
+        body{
+            /* background-color: aqua; */
+            background-image:url(../12.BackgroundProperty/light-background-hd-wallpaper-preview.jpg);
+            background-repeat:no-repeat;
+            background-position:45%;
+            background-size:100%;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Background Property</h1>
+    <div>HELLO I'M WORKING ON BACKGROUND IMAGE.</div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properdty</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            width: 500px;
+            height: 100px;
+            margin: auto;
+            text-align: center;
+            padding-top: 40px;
+        }
+        body{
+            /* background-color: aqua; */
+            background-image:url(../12.BackgroundProperty/light-background-hd-wallpaper-preview.jpg);
+            background-repeat:no-repeat;
+            background-position:75% 25%;
+            background-size:100%;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Background Property</h1>
+    <div>HELLO I'M WORKING ON BACKGROUND IMAGE.</div>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------
+Border-syle Property-
+------------------------------------------------------------
+
+CSS Border Syntax:-
+---------------------------------
+border-style: 
+none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+-----------------------------------------------------------------------------------------------
+
+
+Value		Descrption		
+-------------------------------------------
+none	---	Default value, Specific no border.
+------------------
+hidden	---	The same as "none", except in border conflict resolution for table element.
+-----------
+dotted	---	Specifies a dotted border......
+-----------------
+dashed	---
+solid
+double
+groove
+ridge
+inset
+outset
+initial
+inherit
+-------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 5px solid;
+            /* border-style: dotted; */
+            /* border-style: dashed; */
+            /* borer-style: double; */
+            /* border-style: groove; */
+            /* border-style: inset; */
+            /* border-style: outset; */
+            /* border-style: ridge; */
+            /* border-style: solid; */
+            /* border-style: none; */
+            /* border-style: hidden; */
+            border-color: red;
+            border-radius: 10px;
+            background-color: aquamarine;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Border Property</h1>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------
+
+CSS TEXT
+------------------------
+>> CSS has a lot of properties from its parent element.
+>> a). color -> hex,rgb,rgba, hsla
+>> b). text-align-last, direction:rtl,unicode-bidi:bidi-override
+>> c). text-decoration
+	>> text-decoration-color, text-decoration-style, text-decoration-thickness;
+
+>> d). text-transform
+>> e). text-spacing
+>> f). text-shadow
+-----------------------------------------------------------------------------------------------------------------
+a). color property
+	1). value:red; ----> red color
+	2). hexadecimal --- #ff0000 [red -- ff, green- 00, blue-00]
+	3). rgb ---> rgb(255,00,00)
+	4). rgba -- a ---> Opacity (r-red, g-green, b-blue, a-opacity)
+				rgba(250,200,200)
+	5). hsl
+	6). hsla  ---> a-opacity (hsla(250,200,200,0.5)   [0-1]
+--------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Property in text</title>
+    <style>
+        #kl{
+            font-size: 30px;
+        }
+        #po{
+            font-size: 50px;
+            /* color: red; */
+            /* color:rgb(200,150,200) */
+            /* color: rgba(255,00,00,1.0); */
+            /* color: hsl(255, 0, 0); */
+            color: hsla(1, 100%, 50%, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <p id="kl">Hello this is CSS Text Property</p>
+
+    <p id="po">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum provident voluptatibus iusto saepe veniam doloremque expedita commodi non odio obcaecati culpa excepturi repellendus nam minima ex hic aut? Corporis asperiores nulla libero quas error, impedit iure. Fugiat, nam aut odio itaque, sequi voluptates adipisci perferendis, sunt nihil facilis quam?</p>
+    
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------
+
+b). text-align
+text-align-last, direction:rtl, unicode-bidi:bidi-overide;
+---------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Property in text</title>
+    <style>
+        /* h1{
+            text-align: center;
+        } */
+        /* h1{
+            text-align: right;
+        } */
+        /* h1{
+            text-align: left;
+        } */
+        h1{
+           text-align: center;
+        }
+        p{
+            font-size: 30px;
+            /* text-align: right; */
+            /* text-align: center; */
+            /* text-align: left; */
+            text-align: justify;
+            /* text-align-last: center; */
+            /* text-align-last: left; */
+            /* text-align-last: right; */
+            text-align-last: justify;
+        }
+        h2{
+            /* left top right  */
+            /* direction: ltr; */
+            direction: rtl;
+        }
+        h2{
+            unicode-bidi: bidi-override;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>This is Heading One</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam, repellendus possimus consectetur cupiditate maxime aspernatur corporis nam, quae iusto tempore reprehenderit! Temporibus, illum fugit nostrum unde iure ut architecto blanditiis debitis accusamus voluptate dolorum quisquam eius veritatis ipsum voluptates nihil quasi id, quo mollitia optio velit ipsam eos. Voluptates, rerum soluta! Nihil fuga dolor explicabo adipisci, suscipit aliquam porro veniam. Amet repudiandae, suscipit enim aperiam autem recusandae iusto, aliquid tenetur minima velit facilis? A voluptatem ex eius minus minima.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laboriosam voluptas est delectus similique id, natus corrupti quo. Eligendi quo at, ducimus unde non voluptate atque, magni saepe ab illo possimus accusamus enim ipsa sapiente dolorem deleniti nemo mollitia modi aut architecto a, nostrum perferendis delectus quis! Numquam quam facere esse accusamus iste nostrum et libero nesciunt quas alias? Reiciendis, libero! Dignissimos vitae, dolorum exercitationem quibusdam, ratione cumque sapiente possimus delectus beatae velit iste excepturi?</h2>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------
+
+>> c). text-decoration
+----------------------------------------------------------------------------------------------
+
+Text-decoration0color, text-decoration-style, text-decoration-thickness.
+-------------------------------------------------------------------------
+
+solid: - Defalut value. This line will display as a single line.
+-------------------------------------------------------
+
+double:-The line will display as a double line.
+------------------
+dotted: The line will display as a dotted line.
+---------------------------
+dashed: The line will display as a dashed line.
+-----------------------
+Wavy: The line will display as a wavy line.
+------------------
+initial: Sets this property to its default value.
+-------------------------
+inherit: Inherits this property from it's parent element.
+----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style: double;
+        }
+        h2{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style: dashed;
+        }
+        h3{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style: dotted;
+        }
+        h4{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style:wavy;
+        }
+        h5{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style: solid;
+        }
+        h6{
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 5px;
+            text-decoration-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Text Decoration.</h1>
+    <h2>Hello Text Decoration.</h2>
+    <h3>Hello Text Decoration.</h3>
+    <h4>Hello Text Decoration.</h4>
+    <h5>Hello Text Decoration.</h5>
+    <h6>Hello Text Decoration.</h6>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------
+>> d). text-transform
+
+----------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+        }
+        h2{
+            text-transform: lowercase;
+        }
+        h3{
+            text-transform: capitalize;
+        }
+        h4{
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello Text Transform.</h1>
+    <h2>hello Text Transform.</h2>
+    <h3>hello Text Transform.</h3>
+    <h4>hello Text Transform.</h4>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+>> e). text-spacing
+-------------------------
+>> In text Spacing we have following attributes:
+---------------
+Property		Description
+-----------------------------------------------------------------------
+letter-spacing:		Specifies the space between characters in a text.
+----------------------------------------------------------------------------
+line-height:		Specifies the line height.
+--------------------------------------------------------------------------
+text-indent:		Specifies the indentation of the first line in a text-block.
+-----------------------------------------------------------------------------------
+white-space:		Specifies how to handle white-space inside an element.
+--------------------------------------------------------------------------------------------
+word-spacing:		Specifies how to handle word-space inside an element.
+---------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Spacing.</title>
+    <style>
+        h2{
+            /* text-spacing  */
+            /* letter-spacing: 20px; */
+            text-indent: 80px;
+            line-height:80px;
+        }
+        .p1{
+            word-spacing: 50px;
+        }
+        .whitespace{
+            text-indent: 50px;
+            /* white-space: normal; */
+            white-space: nowrap;
+            /* white-space: pre-wrap; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Text Spacing</h1>
+    <hr>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, officiis accusamus. Commodi aspernatur voluptatem praesentium modi aperiam illo culpa sint enim. Amet, iure sequi laudantium tempore pariatur aliquam. Ex a corporis iusto dolores itaque voluptatibus voluptatum provident, voluptate voluptas eos rem fuga blanditiis quasi soluta maxime numquam pariatur at sunt.</h2>
+    <hr>
+    <h1 class="p1">White spacing</h1>
+    <h2 class="whitespace">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas et, optio repudiandae incidunt nostrum ullam aliquam dolorem fugit dolor deserunt accusantium voluptatibus nam doloribus veniam neque voluptas voluptatem ab ea ipsa doloremque eius beatae, distinctio alias officiis. Numquam nulla ratione possimus, alias, laudantium sunt error tempora voluptatum quas sapiente amet nostrum accusamus voluptates ducimus hic nemo aperiam est perferendis architecto.</h2>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+>> f). text-shadow
+-------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        .textshadow{
+            /* text-shadow: horizontal vertical; */
+            /* text-shadow: 2px 7px red; */
+            text-shadow: 5px 2px green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Shadow</h1>
+    <hr>
+    <h1 class="textshadow">TEXT SHADOW</h1>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Note:
+CSS LIST
+-----------------------------------
+list-style-type:
+	circle,
+	square,
+	upper-roman, 
+	lower-alpha,
+	none
+list-style-image: 
+list-style-position: inside/outside
+-----------------------------------------------------------------------------------------------------
+
+CSS Table
+---------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        ul{
+            /* ordered list  */
+            /* list-style-type: lower-alpha;  */
+            /* list-style-type: upper-alpha; */
+            /* list-style-type: lower-roman; */
+            /* list-style-type: decimal; */
+            /* list-style-type: armenian; */
+            /* list-style-type: decimal-leading-zero; */
+            /* list-style-type: georgian; */
+            list-style-type: upper-roman;
+
+
+            /* unordered list  */
+            /* list-style-type: circle; */
+            /* list-style-type: disc; */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS LIST</h1>
+    <hr>
+    <ul>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Dot NET</li>
+        <li>Python</li>
+        <li>React</li>
+    </ul>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------
+
+
+>> How to put image on css list
+----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        ul{
+            list-style-image: url("../15.Table/list-bullets-icon-concept-in-blue-color-vector.jpg");
+        }
+
+        ul{
+            /* list-style-position: outside; */
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS LIST</h1>
+    <hr>
+    <ul>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Dot NET</li>
+        <li>Python</li>
+        <li>React</li>
+    </ul>
+    
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------
+
+CSS Table:
+----------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        table{
+            border: 2px solid red;
+            border-collapse: collapse;
+            background-color: aquamarine;
+        }
+        td{
+            height: 35px;
+            /* vertical-align: bottom; */
+            /* vertical-align: middle; */
+            /* vertical-align: top; */
+            vertical-align: auto;
+        }
+        /* selected table row color  */
+        tr:nth-child(even){
+            background-color: red;
+        }
+        tr:nth-child(odd){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Table</h1>
+    <table>
+        <tr>
+            <th>EID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Ashish</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Vinod</td>
+            <td>55</td>
+        </tr>
+    </table>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+    <style>
+        img:hover{
+            transform: scale(5.0);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="../15.Table/list-bullets-icon-concept-in-blue-color-vector.jpg" alt="image">
+    </p>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------
+
+CSS Layout
+-----------------------------------------------------------------------------------------------
+
+1. Display
+2. Position
+3. z-index
+4. Overflow
+5. Float
+6. Opacity/Transparency- 0.0-1.0
+----------------------------------------------------------------------------------------
+
+1. Display
+-------------------
+>> Display properties is used to display the content of html element.
+	>> display:none|block|inline|inline-block
+------------------------------------------------------------------------------------------------
+2. Position
+--------------------------------
+	>> To set the content.
+	>> Display Attribute:
+	>> position: none|block|inline|inline-block
+-----------------------------------------------------------------------------------------------
+
+3. z-index[Front,Behind, Other]
+----------------------------------------------
+	>> To Overcome the overlapping between the content.
+	>> Z-index determine which content must be Front, Behin and others.
+	>> Negative value is also allowed in this properties.
+	>> Negative value is used to set the content behind.
+-------------------------------------------------------------------------------------------
+4. Overflow
+-----------------------
+
+	>> To maintain the content inside the div element.
+	>> overflow: hidden|scroll|visible
+-------------------------------------------------------------------
+5. Float/Clear
+----------------------
+6.Opacity/Transparency: 0.0-1.0
+-------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        .kl{
+            width: 40%;
+            height: 40%;
+            background-color: chocolate;
+            display: block;
+            position: relative;
+            left: 0;
+            bottom: 20px;
+            /* top: 30px; */
+            top: 50px;
+        }
+        .kp{
+            width: 40%;
+            height: 40%;
+            background-color: blue;
+            border: 2px solid black;
+            display: block;
+            position: absolute;
+            top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="kl">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum perferendis tenetur cum doloremque, quibusdam quisquam similique suscipit, itaque optio quasi, est dicta facere? Inventore ipsum deserunt odio et eligendi consequuntur sequi quibusdam delectus doloremque, itaque esse sunt magni exercitationem molestias ex ducimus reiciendis voluptatem debitis porro iusto minima, quas eos?
+    </div>
+    <div class="kp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, alias asperiores aliquid sit accusantium impedit! Mollitia suscipit vitae officiis eaque?
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------
+
+3. z-index
+---------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .kl{
+            width: 40%;
+            height: 40%;
+            background-color: chartreuse;
+            border: 2px solid red;
+            display: block;
+            position: absolute;
+        }
+        .kp{
+            width: 40%;
+            height: 40%;
+            background-color: brown;
+            border: 2px solid red;
+            display: block;
+            z-index: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-index</h1>
+    <div class="kl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, architecto quod. Repudiandae asperiores enim molestias dicta? Tenetur voluptatum beatae sint.
+    </div>
+    <div class="kp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, saepe libero inventore placeat fugiat repellat quasi amet facilis labore iste autem odio fugit consequatur mollitia possimus atque accusamus? Quo similique unde laborum temporibus sequi dolor reiciendis atque cumque voluptatum eum perspiciatis aut cupiditate itaque ducimus, in, vitae aspernatur dolorum porro?
+    </div>
+    
+</body>
+</html>
+-------------------------------------------------------------------------------------------
+
+4. Overflow
+--------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .kl{
+            width: 30%;
+            height: 30%;
+            background-color: chartreuse;
+            border: 2px solid red;
+            display: block;
+            position: absolute;
+            left: 12px;
+            /* overflow: auto; */
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow: visible; */
+            /* overflow: auto; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <div class="kl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae recusandae voluptas quaerat a temporibus optio minima quisquam corrupti ipsum nulla eos laboriosam aliquam animi ducimus nobis possimus modi consequuntur non, dolores nam iste quam. Consequuntur obcaecati asperiores laboriosam soluta, sint aliquid ab tenetur! Magnam corrupti maxime suscipit doloribus quae possimus aspernatur a deleniti consequuntur ullam ea delectus beatae neque, ex fugit iure iusto facere recusandae sequi quis voluptatem in alias quaerat illo. Quo, soluta neque magnam eos sequi veritatis quisquam placeat necessitatibus inventore sunt quod corrupti enim fuga ea veniam unde pariatur a sed voluptatem reiciendis repellendus asperiores dignissimos? Delectus magni dignissimos recusandae voluptatum dolorem accusantium eligendi laudantium, qui consequatur minima in cupiditate aliquam porro iure, beatae dolores repudiandae nihil quibusdam odio, aut quos. Libero ratione perferendis maxime, magni facilis deserunt soluta ipsam perspiciatis reiciendis optio odio est esse, labore provident nisi et deleniti placeat consequatur commodi porro dolore.
+    </div>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------
+5. Float/Clear
+----------------------
+>> It is used to float the content.
+>> You can float the content by the following tow ways:-
+	>> 1. left 
+	>> 2. right
+	>> clear:
+>> when a user want to display the content other than left and right [below]
+	>> clear: none|left|right|both;
+--------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .kl{
+            width: 40%;
+            height: 40%;
+            background-color: chartreuse;
+            border: 2px solid red;
+            /* float: left; */
+            /* float: right; */
+            float: left;
+
+        }
+        .kp{
+            width: 40%;
+            height: 40%;
+            background-color: brown;
+            border: 2px solid red;
+            /* float: left; */
+            /* clear: left; */
+            /* clear: right; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="kl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus quia corrupti, eos quo delectus repellendus inventore qui est temporibus ullam cum tempore, nisi natus adipisci. Molestiae commodi saepe deleniti dolore veniam architecto et obcaecati ipsam accusamus hic atque necessitatibus culpa esse, vel consectetur ratione blanditiis similique voluptatibus voluptatem tenetur! Repellat nobis natus ratione a commodi exercitationem accusamus officia incidunt, aliquid accusantium facilis rerum. Quis quam expedita voluptatem, non iste esse quo. Fugiat at ipsa rerum omnis aliquam ea aspernatur iure ipsam veniam repellat saepe dolorem sit eos cumque hic, fugit odio assumenda. Quos, sit laudantium suscipit magni numquam necessitatibus maxime molestiae illum corrupti aliquid dignissimos eum vel error! Laudantium cumque nemo delectus eos minima saepe ex, animi deleniti? Dicta blanditiis tenetur harum doloribus, qui reprehenderit minima hic ipsum ullam tempore tempora deleniti, aut iste sint! Officia reprehenderit et, ipsam optio veritatis minima, voluptas nulla sint nihil quisquam consequuntur quo.
+    </div>
+    <div class="kp">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorem fugiat quo impedit eligendi obcaecati? Unde veniam veritatis hic ex. Molestiae ea pariatur cupiditate unde, voluptas beatae, itaque illo quisquam temporibus libero deserunt nihil sit officia optio magnam quia perspiciatis architecto harum ullam accusantium rem ad excepturi deleniti tenetur? Sunt vel natus cum adipisci amet cumque excepturi quod qui veniam debitis magni, quae maiores provident ipsa repellendus exercitationem quo repellat consequatur laborum incidunt. Modi obcaecati totam voluptate? Sunt dolor soluta eum quas minima. Amet nisi aperiam voluptates, iusto tempora perspiciatis quibusdam ipsum dolorem, eum, asperiores debitis quos officia expedita eius vero laborum obcaecati. Explicabo velit iusto, voluptatibus ipsum nostrum quis. Obcaecati natus assumenda laudantium qui placeat officiis aspernatur aliquid, nesciunt eius fugiat hic quasi, nam commodi similique! Architecto aspernatur enim qui officiis quisquam temporibus provident, quis iste minima ratione cum similique neque saepe asperiores sint nobis soluta iusto sed at? Vero, modi blanditiis fugit sed, doloremque accusantium esse illum expedita eum impedit officiis fuga voluptates quod tempora iste, eos porro tenetur rem ratione rerum saepe alias velit quibusdam. Cumque, libero, molestiae ad dolorem maiores vel natus nostrum dolores voluptate omnis exercitationem cupiditate eos modi expedita et minima excepturi asperiores perferendis!
+    </div>
+    
+</body>
+</html>
+----------------------------------------------------------------------------------------
+6.Opacity/Transparency: 0.0-1.0
+
+--------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        h2{
+            color: red;
+            background-color: yellow;
+        }
+        h2:hover{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <h2>Transparency/Opacity</h2>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------
+
+8. PSUDO CLASSES.
+--------------------------------------
+>> IT IS REPRESENTED BY: DOUBLU COLON SYMBO,
+>> IT IS THE FAMILY OF CSS1.
+>> a:link ---> unvisited
+>> a:visisted --> Visited
+>> a:hover --> When we mouse over an element.
+>> a:active --> When we get mouse clicked.
+----------------------------------------------------------------------------------------
+
+Pseudo elements:
+	>> It is represented by: Double Colon symbol.
+	>> It is the family of css2. now current is css3
+syntax:
+
+TagName::pseudo elemnet{
+attribute:value;
+
+}
+
+p::first-letter{
+
+}
+
+h1::before{
+
+
+}
+
+h1::after{
+
+}
+
+::selection{
+
+}
+-------------------------------------------------------------------------------------------
+
+media Query
+---------------------------
+
+
+
+
+JavaScript
+---------------------------------------------
+What is difference between Java and JavaScript
+
+------------------------------------
+1. java runs at server machine where as js runs at client machine.
+2). Java is a programming where js is a scripting language.
+3). Syntx is different in java as compare to js.
+4). Java was developed by [James Goosling] where as javascript was developed by Bredan Eich.
+
+5). java Strong typed language where as js is a dynamic typed language.
+--------------------------------------------------------------------------------------------------------------
+
+static or strongly
+int x;
+x 20;
+------------------------------------------------------
+Dynamic typed When you run program  data type will be declared according to value.
+
+x = 10
+type = int
+-------------------------
+x = "hello world"
+type = string 
+----------------------------------------------------------------------------------------------
+
+-------------------------------
+
+History of JavaScript
+--------------------------
+
+>> JS was developed by Brendan Eich.
+>> Initial named: MOCHA => After that named ==> Live Script 
+>> Now named as : JavaScript
+-------------------------------------------------------------------------
+
+History of JS
+-----------------
+
+1993: Mosaic - first web browser
+1994: Netscape is created.
+1995: Bredan Eich creates:
+	>> Mocha => Livescript => JavaScript
+1997: ECMA [European Computer Manufacturer Association]/ES1 [Brendan Eich First Standardization]
+1998: ES2
+1999: ES3
+2000: ES4 [Filed]
+2001: JSON [JavaScript Object Notation]
+2002: Firefox
+2003: Safari
+2004: Gmail
+2005: Ajax, Google Maps
+2006: jQuery [JavaScript Library]
+2007: iPhone
+2008: Chrome/ V8 engine
+2009: Node.js/ CoffeeScript, ES5
+2010: Angular
+2011: Browserify
+2013: React
+2014: Babel, Vue.js, Webpack
+2015: ES6/Jastack
+2016: Svelte
+2017: WebAssembly
+2018: TensorFlow.js
+--------------------------------------------------------------------------------------------------------
+Here's the complete, corrected, and extended timeline:
+1993 — Mosaic, the first popular web browser
+1994 — Netscape Communications founded; Netscape Navigator released
+1995 — Brendan Eich creates Mocha → LiveScript → JavaScript
+1997 — ECMA standardization begins; ES1 released
+1998 — ES2 (minor editorial cleanup)
+1999 — ES3 (core language features established)
+2000 — ES4 proposed and development begins (never shipped — formally abandoned in 2008)
+2001 — JSON specified (Douglas Crockford)
+2002 — Firefox's predecessor (Phoenix) released
+2003 — Safari released
+2004 — Gmail launched
+2005 — Ajax term coined; Google Maps launched
+2006 — jQuery released
+2007 — iPhone launched
+2008 — Chrome browser and V8 engine released
+2009 — Node.js and ES5 released; CoffeeScript released
+2010 — AngularJS released
+2011 — Browserify released
+2012 — Webpack released (corrected from 2014)
+2013 — React open-sourced
+2014 — Babel (originally "6to5") and Vue.js released
+2015 — ES6 / ES2015 — the big one (classes, modules, arrow functions, let/const, promises)
+2016 — Svelte released
+2017 — WebAssembly MVP ships in browsers
+2018 — TensorFlow.js released
+2019 — ES2019 (Array.flat, Object.fromEntries); Deno announced by Ryan Dahl
+2020 — ES2020 (optional chaining, nullish coalescing, BigInt); Vite released
+2021 — ES2021 (logical assignment operators, String.replaceAll)
+2022 — ES2022 (top-level await, private class fields); React 18 (concurrent rendering, Suspense)
+2023 — ES2023 (Array.findLast, hashbang support); Bun released
+2024 — ES2024 (Object.groupBy, Promise.withResolvers); Express 5 released; React 19 released
+2025 — AI-assisted coding tools become standard in the JS workflow
+2026 — ES2026 cycle in progress; Node.js/Deno/Bun runtime competition continues; JSR registry gains traction as an npm alternative
+-----------------------------------------------------------------------------------------------
+Summerize:
+>>  js is very popular scripting language at client side.
+>> js is the language of internet.
+>> js is used to make your html content dynamic and alive.
+>> v8 engine is used in js. [npm]
+>> js a client side scripting language.
+>> In js we use <script></script> tag, you can use this script tag inside <head></head> as well inside body.
+>> The file extension of JavaScript file is .js
+-----------------------------------------------------------------------------------------------
+
+Wap to display welcome to js.
+--------------------------------------------------------------------------------------------
+Browser --> inspect ---> Console
+-------------------------
+alert("Welcome to JavaScript");   ==> browser alert popup
+console.log("Welcome to JavaScirpt"); ===> Terminal
+--------------------------------------------------------------------------------------
+Note:
+>> JavaScript only works on Browser.
+>> Not in VS Code terminal[CPU];
+
+
+Installation:
+--------------------------------------------------------------------------
+
+1). Install Node JS ==> https://nodejs.org/en/download/
+2). Check node is working or not.
+>> Open cmd type : node --version.
+3). check npm is working or not?
+	>> open cmd and type npm --version [npm - node package manager]
+---------------------------------------------------------
+4). Open VS Code and click extension Button:
+	>> a). In search bar search "javascript es6" and select the first option "javascript (ES6)" code snippet.
+	>> b). Now search "Code Runner" and install code runner.
+	>> to run the code - Ctrl+Alt+n
+	> to stop the code --> Ctrl+alt+m
+------------------------------------------------------------
+5). Now you can create .js file and start writing javascript code .
+	console.log("Welcome to JS");
+6). Now we have to install node packages to take user input from terminal or console.
+	>> a). Open New Terminal and type "npm install prompt-sync"
+	>> b). if you want  to use prompt in your program then type below line:
+	>> c). const prompt = require('prompt-sync')();  ##### user input from user in terminal.
+	>> d). After above line you can write your program and also able to run program but there is a problem you are not able to collect input from the user.
+	>> e). No you have to do one more setting in VS- Code.
+	>> f). Go to file --> preferences ---> setting
+	>> g). search and type "Run in Terminal"
+	>> h). Select "Run in Terminal"
+	>> i). Select "Code -Runner" Rin in terminal [select the checkbox.]
+-----------------------------------------------------------------------------------------------
+
+Variable in JS:
+--------------------
+>> It is used to hold value.
+>> It is also known as "Identifier".
+>> Variable is a memory location where we keep out our value.
+>> Variable is nothing, it is just name to store values.
+
+------------------------------------------------------------------------------------------
+
+Syntax to create variable in JS
+--------------------------------------------
+variablename = value
+
+var variablename = value
+------------------------
+var variablename;
+variablename = 50;
+--------------------------------------
+
+age = 30;
+----------------------
+var age;
+
+age = 40;
+------------------------------------------------------------------------
+
+Note: In js we have dynamic variable structure.
+
+// creating variables in js
+
+// first Method
+a = 345;  // bad practice 
+console.log(a);
+
+
+// second method 
+var a1;  // good practice
+a1 = 345
+console.log(a1);
+
+// third method 
+var a2 = 345;   // good practice 
+console.log(a2); 
+-----------------------------------------------------------------------------------------------------
+
+// creating variables in js
+
+// first Method
+a = 345;  // bad practice 
+console.log(a);
+
+
+// second method 
+var a1;  // good practice
+a1 = 345
+console.log(a1);
+
+// third method 
+var a2 = 345;   // good practice 
+console.log(a2); 
+
+// adding a1 and b1 variable 
+
+var add;
+add = a1+a2;
+console.log(`The sum of two numbers ${a1} and ${a2} is ${add}`);
+--------------------------------------------------------------------------------------------------
+Data Type in JS:-
+--------------------------------------------------------------------------
+
+1). Primitive Data Type
+	>> 1. Number
+	>> 2. String
+	>> 3. Boolean
+	>> 4. Undefined
+	>> 5. Null
+	>> 6. BigInt [Also Known as trivial/Other data type]
+	>> 7. Symbol
+
+2). Non-Primitive Data Type
+	>> 1. Object
+	>> 2. Arrays
+	>> 3. Function
+
+3). User-Defined Data Type
+	>> 1. Classes
+	>> 2. Interface
+
+-----------------------------------------------------------------------------------------------
+
+1) Primitive Data Types
+   1. Number
+   2. String
+   3. Boolean
+   4. Undefined
+   5. Null
+   6. BigInt
+   7. Symbol
+
+2) Non-Primitive (Reference) Data Type
+   1. Object
+      - Arrays        (object with numeric indices)
+      - Functions      (callable objects)
+      - Classes        (syntax for creating objects)
+      - Dates, Maps, Sets, RegExp, etc. (all built on Object)
+
+--------------------------------------------------------------------------------------------------
+
+Note:
+
+>> JavaScript has several data types, and each variable has defined scope, determining where in your code you can access that variable.
+
+Data Types
+-------------------------
+Primitive Data types.
+------------------------------------------------
+
+[Primitive Data types:]
+	>> 1. Number: Represents both integer and floating-point numbers.
+	>> 2. String: Represents a sequence of characters enclosed in single, double or backticks.
+	>> 3. Boolean: Represents a logical entity, having only two values: true or false.
+	>> 4. Null: Represents the intentional absence of any object value.
+	>> 5. Undefined: Represents a variable that has been declared but not assigned value.
+	>> 6. Symbol [ES6]: Represents a unique and immutable value, often used as object key.
+	>> 7.BigInt (ES2020): Represents integers with arbitrary precision, exceeding the limit of the number type.
+
+
+* [Complex Data type/Non-Primitive]
+	>> Object: Represents a collection of key-value pairs, where keys are strings and values can be of any data type.
+
+-------------------------------------------------------------------------------------------------
+
+>> Scope:
+	>> Scope determines the accessibility of variables, functions, and objects in some particular part of your code during runtime. 
+
+> JavaScript has the following types of scope:
+----------------------------------------------
+>> 1. Global Scope
+	>> Variable declared outside of any function block have global scope. They can be accessed and modified from anywhere in your code.
+
+>> 2. Function Scope [Local Scope]
+	>> Variables declared within a function have function scope. They can only be accessed and modified within the function.
+
+
+>> 3. Block Scope [ES6]
+--------------------------------
+	>> Introduced in ES6, variables declared with let and const keywords have block scope. This means it is only accessible within the block where it defined in, such as within an if statement, loop or a block of code defined by curly braces.
+
+--------------------------------------------------------------------------------------
+
+| Variable      | Declaration | Scope          | Accessible From            |
+| ------------- | ----------- | -------------- | -------------------------- |
+| `globalVar`   | `var`       | Global Scope   | Anywhere in the program    |
+| `functionVar` | `var`       | Function Scope | Only inside `myFunction()` |
+| `blockVar`    | `let`       | Block Scope    | Only inside the `if` block |
+
+
+----------------------------------------------------------------------------------------------
+
+Global Scope
+│
+├── globalVar
+│
+└── myFunction()   ← Function Scope
+    │
+    ├── functionVar
+    │
+    └── if (true)  ← Block Scope
+        │
+        └── blockVar
+--------------------------------------------------------------------------------------------------------
+
+Note: to check type of variable we have typeof() function.
+
+a = 20;
+b = 35.45;
+
+
+
+-----------------------------------
+var a = 20;
+var b = 35.45;
+
+console.log(a);
+console.log(typeof(a));
+
+console.log(b);
+console.log(typeof(b));
+---------------------------------------------------------------------------------------------------------
+
+// Primitive data type 
+
+// 1. number 
+
+var a = 20;
+var b = 35.45;
+console.log(a);
+console.log(typeof(a));
+console.log(b); 
+console.log(typeof(b));
+
+// 2. string 
+var str1 = 'a';
+console.log(str1);
+console.log(typeof(str1));
+
+
+// 3.Boolean 
+
+var a1 = true;
+var b1 = false;
+
+console.log(a1);
+console.log(typeof(a1));
+console.log(b1);
+console.log(typeof(b1));
+
+// 4.undefined 
+
+var a2 = undefined  // data type - undefined
+console.log(a);
+console.log(typeof(a2));
+
+// 5. null 
+
+a3 = null;  // object 
+console.log(a3);
+console.log(typeof(a3));
+
+// 6. symbol
+
+// Creating symbols
+const sym1 = Symbol("id");
+const sym2 = Symbol("id");
+
+// Uniqueness check
+console.log(sym1 === sym2); // false
+
+// Accessing the description
+console.log(sym1.description); // "id"
+
+
+
+// 7. bigint 
+
+// firstmethod 
+a5 = BigInt(1651655656);
+console.log(a5);
+console.log(typeof(a5));
+
+
+// secondmethod 
+
+a6 = 1311561n;
+console.log(a6);
+console.log(typeof(a6));
+
+
+
+-------------------------------------------------------------------------------------------------
+//End of Primitive Data type.
+
+----------------------------------------------------------------------------------------
+
+let
+var 
+const
+
+---------------------------------------------------------------------------------------------
+const a= 20
+const a //error
+
+const sun = 1;
+
+let a = 15
+let a // error
+
+let moon = 1;
+
+let moon = 116;  // Jupiter  # reassignment
+ 
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Feature                     | var                                       | let                                       | const                                     |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Origins                     | pre ES2015                                | ES2015 (ES6)                              | ES2015 (ES6)                              |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Scope                       | Globally scoped OR                        | Globally scoped OR                        | Globally scoped OR                        |
+|                             | Function scoped                           | Block scoped                              | Block scoped                              |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Global Scope                | Attached to Window object                 | Not attached to Window object             | Not attached to Window object             |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Hoisting                    | Hoisted and initialized                   | Hoisted but remains                       | Hoisted but remains                       |
+|                             | as undefined                              | uninitialized (TDZ)                       | uninitialized (TDZ)                       |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Redeclaration               | Yes                                       | No                                        | No                                        |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+| Reassignment                | Yes                                       | Yes                                       | No                                        |
++-----------------------------+-------------------------------------------+-------------------------------------------+-------------------------------------------+
+
+
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Feature              | Hoisting                                                 | Initialization                                            |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Definition           | JavaScript moves declarations to the top of their scope. | Assigning an initial value to a variable.                 |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Happens When         | During the memory creation phase.                         | During the execution phase.                               |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Purpose              | Makes declarations available before execution.           | Gives the variable its first value.                       |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Value Before         | var → undefined                                          | Variable gets the assigned value.                         |
+| Initialization       | let/const → Uninitialized (TDZ)                          |                                                           |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Access Before        | var → Allowed (returns undefined)                        | Depends on hoisting behavior.                             |
+| Initialization       | let/const → ReferenceError                               |                                                           |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+| Example              | console.log(a);                                          | var a = 10;                                               |
+|                      | var a;                                                   | // a is initialized with 10                               |
++----------------------+----------------------------------------------------------+-----------------------------------------------------------+
+
+
+---------------------------------------------------------
+
+1. Var Example
+2. Let Example
+3. Const Example
+
+
+Code Debugging.
+
+------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
