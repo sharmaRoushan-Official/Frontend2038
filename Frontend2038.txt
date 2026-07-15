@@ -2792,57 +2792,172 @@ Code Debugging.
 
 ------------------------
 
+Comparison Between var, let, const 
+---------------------------------------
+
+### Difference Between `var`, `let`, and `const`
+
+| **Feature** | **`var`** | **`let`** | **`const`** |
+|-------------|-----------|-----------|-------------|
+| **Scope** | Function / Global | Block `{ }` | Block `{ }` |
+| **Reassignment** | Yes | Yes | No |
+| **Redeclaration** | Yes | No | No |
+| **Hoisting** | Hoisted (`undefined`) | Hoisted (Uninitialized / TDZ) | Hoisted (Uninitialized / TDZ) |
+| **Initial Value Required** | No | No | Yes |
+
+
+--------------------------------------------------------------------------------
+
+
+// 1 var --- Function Block 
+
+var x = 5;   // global variable 
+console.log(x);
+{
+    var x=25;  // local variable iniside the block
+    console.log(x);
+}
+console.log(x);  // global variable is changed because var is function scoped, not block scoped //25
+
+
+// 2. let --- Function Block
+
+let y = 10;  // global variable is 10
+console.log(y);
+{
+    let y = 20;  // local variable inside the block is 20
+    console.log(y);
+}
+console.log(y);  // global variable is not changed because let is block scoped //10
+
+
+// 3. const --- Function Block
+
+const z = 15;  // global constant is 15
+console.log(z);
+// const z = 30;  // This would cause a TypeError because z is already declared as a constant
+//z = 30; // This would cause a TypeError because z is a constant and cannot be reassigned
+{
+    const z = 25;  // local constant inside the block is 25
+    console.log(z);
+}
+console.log(z);  // global constant is not changed because const is block scoped //15
+
+const pi = 3.147
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+>> Operators in JavaScript
+>> It is a special symbol i.e used to perform some operations...
+
+
+1). Arithematic Operator: [+,-,*,/,%,++(increment),--(Decrement),**]
+    >> Which requires tow operand a+b, a and b ----- are operands and + is operator.
+    >> It works on value.
+    >> ++, -- is Unary operator which works on single value.
+    >> [+,-,*,/,//,**] it is binary opertor which works on two operands.
+2). Assignment Operator
+    >> +=
+    >> -=
+    >> *=
+    >> /=
+3). Comparison/Relational Operator 
+    >> It Works on Value
+    >> It returns Boolean Operator is "True/False"
+
+-------
+< - [Less than]
+> - [Greater than]
+<= - [Less than or equal to]
+>= - [Greater than or equal to]
+== - [Equals to]
+!= = [Not Equals to]
+!== - [Not Double equal to]- check their data type
+
+a = '5';
+b = 5;
+
+console.log(a==b);  // True  -- It can check only value not thier data type.
+
+console.log(a===b); // False  -- It can check their data type and thier their value.
+
+
+------------------------------------------------
+4. Logical Operator;
+----
+&& -> AND Operator 
+|| -> Pipe symbol [OR]
+!  -> Not Operator 
+-------------------------------------------------------------------------------------------------------------------
+
+Home work 
+
+----
+1. wap to take tow input number from user and swap using third variables. 
+2. wap to take two inoput and swap without using thrid variabe.
+3. Wap to take input length and breadth of rectagle and find it's area, perimeter and diagonal.
+4. Wap to take input radius of circle and find the area and circumference of the circle.
+5. wap to create temperature calculatr-
+    a). °F to °C 
+    b). °C to °F
+6. wap to take input five number and find their sum and average.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+6. Data TypeCasting
+>> It is a technique by which we can convert one data type value into another data type.
+
+var a = 20.32;  // float
+console.log(a);
+console.log(typeof(a));
+
+var b = parseInt(a);  // integer
+console.log(b);
+console.log(typeof(b));
 
 
 
+// converting string to integer 
+
+var a1 = "10";
+console.log(a1);
+console.log(typeof(a1));
+
+var a2 = parseInt(a1);
+console.log(a2);
+console.log(typeof(a2));
 
 
+// Converting string to float
+
+var c = "100";
+console.log(c);
+console.log(typeof(c));
 
 
+var d = parseFloat(c);
+console.log(d);
+console.log(typeof(d));
 
 
+// converting number to string
+
+var e = 36;
+
+console.log(e);
+console.log(typeof(e));
+
+var f = String(e);
+console.log(f);
+console.log(typeof(f));
 
 
+-------------------------------------------------------------------------------------------------------------------------------------
+>> Control Statement 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a). Conditional Operator
+    a). if 
+    b). else-if
+    c). else
+-------------------------------------------------------------------------------------------
