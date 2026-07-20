@@ -1,0 +1,89 @@
+1. Given 
+    nums= [12,5,18,7,25,10] 
+    Use map() with lambda to add 10 each element.
+
+2. Given 
+    nums = [3,6,9,12,15]
+    Use map() with lambda to return the cube of each numbers.
+
+3. Given:
+    nums=[11,20,35,40,55,60]
+    Use filter() with lambda to extract numebers divisible by 5 but not by 2.
+
+
+4. Given:
+    words = ["apple","cat","elephant","dog", "python"]
+    Use filter() with lamdba to display words having mroe than 4 chracters.
+
+5. Given:
+    nums = [5,8,2,10,3]
+    Use reduce() with lambda to find the maximum numbers.
+
+6. Given:
+    nums = [100,5,10]
+    Use reduce() with lambda to perform sequential substraction.
+
+7. Given:
+    students =[
+        ("Amit",85),
+        ("Ravi",72),
+        ("Neha",91),
+        ("Pooja",78)
+    ]
+    Sort the list based on marks in ascending order.
+
+8. sort the above list based on student name in reverse alphabetical order.
+
+9. Given:
+    employees =[
+        {"name":"A","salary":35000},
+        {"name":"B","salary":50000},
+        {"name":"C","salary":42000}
+    ]
+    sort employes according to salary(highest ot lowest)
+
+10. Given
+    Use map() with lambda to convert each numebrs into a string:
+    "Number = 2"
+    "Number = 4"
+    ----------------------------------------------------------------------------------------
+
+List comprehension
+
+1. Create a list of numbers from 1 to 100 that are divisible by 3 and 5
+
+2. Given 
+    nums = [4,9,16,25,36]
+    Create a list containing the square root of each number.
+
+3. Given:
+    sentence = "Python programming"
+    Create a list of all vowels present in the sentence.
+
+4. Given:
+    words = ["ptyhon", "java", "c++","django","sql"]
+    create a list containing only words whose lenght is greater than 5
+
+5. Generate a list of all numbers between 50 and 100.
+
+
+6. Given:
+    nums = [2,5,8,11,14]
+    * even numbers -> square
+    * odd numbers -> cube
+
+7. Given
+    names = ["amit","ravi","neha"]
+    convert each name to first capital character.
+
+8. create a list of tuples:
+    [(1,1),(2,4),(3,9)...........(10,100)]
+    using list comprehension
+
+9. Given:
+    nums = [15,22,37,40,55,60]
+    create a new list containing only numbers that are:
+    * greater than 20
+    * divisible by 5
+ 10. matrix = [[1,2,3],[4,5,6],[7,8,9]]
+    convert the matrix into a single flattend list using list comprehension.
