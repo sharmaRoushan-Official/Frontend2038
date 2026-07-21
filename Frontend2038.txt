@@ -3266,3 +3266,400 @@ for (var num of numbers){
 
 
 
+>> Functions in JavaScript 
+
+>> A funciton is a block of code i.e used to perform specific operations.
+>> A function is used to divide the work of a program.
+>> Easy to maintain.
+>> Easy to debug.
+
+>> A funciton is used to perform connectivity between one machine to antoher machine as well as 
+>> connect one layer to another layer.
+
+
+---------------------------------------------
+>> KeyPoints
+-------------------------
+1. Name of Functions
+2. Argumnets/Parameters(Parameters passed into a function)
+3. Return Type.
+
+-------------------------------------------------------------------------------------------------------
+Types of Functions:
+---------------------------------------
+# JavaScript Built-in Functions
+
+## What are Built-in Functions?
+- Built-in Functions are predefined functions provided by JavaScript.
+- They are already defined by the JavaScript engine.
+- We can use them directly without creating our own function.
+
+---
+
+## 1. Global (Built-in) Functions
+
+```javascript
+eval()
+parseInt()
+parseFloat()
+isNaN()
+isFinite()
+Number()
+String()
+Boolean()
+BigInt()
+Symbol()
+encodeURI()
+decodeURI()
+encodeURIComponent()
+decodeURIComponent()
+escape()        // Deprecated
+unescape()      // Deprecated
+```
+
+---
+
+## 2. Math Object Functions
+
+```javascript
+Math.abs()
+Math.ceil()
+Math.floor()
+Math.round()
+Math.trunc()
+Math.sqrt()
+Math.cbrt()
+Math.pow()
+Math.max()
+Math.min()
+Math.random()
+Math.sign()
+Math.sin()
+Math.cos()
+Math.tan()
+Math.asin()
+Math.acos()
+Math.atan()
+Math.log()
+Math.log10()
+Math.log2()
+Math.exp()
+Math.fround()
+Math.imul()
+Math.clz32()
+Math.hypot()
+Math.PI
+Math.E
+```
+
+---
+
+## 3. String Functions
+
+```javascript
+charAt()
+at()
+charCodeAt()
+codePointAt()
+concat()
+includes()
+indexOf()
+lastIndexOf()
+startsWith()
+endsWith()
+slice()
+substring()
+substr()          // Deprecated
+replace()
+replaceAll()
+split()
+trim()
+trimStart()
+trimEnd()
+toUpperCase()
+toLowerCase()
+repeat()
+padStart()
+padEnd()
+match()
+matchAll()
+search()
+localeCompare()
+valueOf()
+toString()
+String.fromCharCode()
+String.fromCodePoint()
+```
+
+---
+
+## 4. Number Functions
+
+```javascript
+toFixed()
+toPrecision()
+toExponential()
+toString()
+valueOf()
+
+Number.isInteger()
+Number.isNaN()
+Number.isFinite()
+Number.parseInt()
+Number.parseFloat()
+```
+
+---
+
+## 5. Array Functions
+
+```javascript
+push()
+pop()
+shift()
+unshift()
+splice()
+slice()
+concat()
+join()
+reverse()
+sort()
+fill()
+copyWithin()
+includes()
+indexOf()
+lastIndexOf()
+find()
+findIndex()
+findLast()
+findLastIndex()
+forEach()
+map()
+filter()
+reduce()
+reduceRight()
+every()
+some()
+flat()
+flatMap()
+at()
+entries()
+keys()
+values()
+```
+
+---
+
+## 6. Date Functions
+
+```javascript
+Date.now()
+
+getDate()
+getDay()
+getMonth()
+getFullYear()
+getHours()
+getMinutes()
+getSeconds()
+getMilliseconds()
+getTime()
+
+setDate()
+setMonth()
+setFullYear()
+setHours()
+setMinutes()
+setSeconds()
+setMilliseconds()
+
+toDateString()
+toTimeString()
+toLocaleDateString()
+toLocaleTimeString()
+toISOString()
+```
+
+---
+
+## 7. Object Functions
+
+```javascript
+Object.keys()
+Object.values()
+Object.entries()
+Object.assign()
+Object.create()
+Object.freeze()
+Object.seal()
+Object.hasOwn()
+Object.is()
+```
+
+---
+
+## 8. JSON Functions
+
+```javascript
+JSON.parse()
+JSON.stringify()
+```
+
+---
+
+## 9. Console Functions
+
+```javascript
+console.log()
+console.error()
+console.warn()
+console.info()
+console.table()
+console.clear()
+console.time()
+console.timeEnd()
+console.count()
+console.trace()
+```
+
+---
+
+## 10. Function Methods
+
+```javascript
+call()
+apply()
+bind()
+```
+
+---
+
+## 11. Promise Functions
+
+```javascript
+then()
+catch()
+finally()
+
+Promise.resolve()
+Promise.reject()
+Promise.all()
+Promise.allSettled()
+Promise.race()
+Promise.any()
+```
+
+---
+
+## 12. Map Functions
+
+```javascript
+set()
+get()
+has()
+delete()
+clear()
+keys()
+values()
+entries()
+forEach()
+```
+
+---
+
+## 13. Set Functions
+
+```javascript
+add()
+has()
+delete()
+clear()
+keys()
+values()
+entries()
+forEach()
+```
+
+---
+
+## 14. Regular Expression (RegExp) Functions
+
+```javascript
+test()
+exec()
+```
+
+---
+
+## Summary
+
+- Global Functions
+- Math Functions
+- String Functions
+- Number Functions
+- Array Functions
+- Date Functions
+- Object Functions
+- JSON Functions
+- Console Functions
+- Function Methods
+- Promise Functions
+- Map Functions
+- Set Functions
+- RegExp Functions
+
+> **Note:**
+> - `Math.sqrt()` is the correct syntax (not `sqrt()`).
+> - `String.fromCharCode()` is the correct syntax (not `fromCharCode()`).
+> - JavaScript provides **500+ built
+---------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+2. User Defined Functions
+    >> Which is defined by the user.
+
+
+---------------------------------------
+Steps to create User Defined Fucntions:-
+---------------------------------------
+1. Function Definition 
+2. Function Invocation/Calling 
+----------------------------------------------------------
+
+Syntax  of Functions: [Function Definition]
+-----------------------------------------
+
+function functionName(commas seperated parameters)
+{
+    // Block of code or Statement.
+}
+-------------------------------------------------------------------------------------------------------------------------------
+Syntax of Function Calling
+------------------------------
+functionName();
+functionName(comma Seperated Arguments)
+
+----------------------------------------------------------------------------------------
+
+function greetFunction(name){
+    return"Hello, " + name + "!";
+}
+var obj = greetFunction("Aditya"); // Returns: "Hello, Aditya!"
+console.log(obj);
+
+
+
+var obj2 = greetFunction("John"); // Returns: "Hello, John!"
+console.log(obj2);
+
+
+var obj3 = greetFunction("Jane"); // Returns: "Hello, Jane!"
+console.log(obj3);
+
+---------------------------------------------------------------------------------------
+>> There are four ways to create user Defined Functions:
+1. Function with no argumetn and no return type.
+2. Function with arguemnt and no return type.
+3. Funtion with no argument and return type. 
+4. Function with argument and return type.
+-----------------------------------------------------------------------------------------------------
