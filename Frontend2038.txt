@@ -2961,3 +2961,308 @@ a). Conditional Operator
     b). else-if
     c). else
 -------------------------------------------------------------------------------------------
+a). if conditon 
+syntax: 
+if(condition){
+    statement;
+
+}
+
+b). if-else 
+-----
+if(conditon)
+{
+    statement;
+}
+else
+{
+    else statment;
+}
+----------------------------------------------------
+c). else-if
+---
+if(conditon){
+    statement1;
+}
+else-if(conditon){
+    statement2;
+}   
+else{   
+    statement3;
+}
+-----------------------------------------------------------
+// Q. Write a program to find the greatest of two number;
+
+const prompt = require("prompt-sync")();
+
+var num1 = parseInt(prompt("Enter first number: "));
+var num2 = parseInt(prompt("Enter second number: "));
+
+if (num1>num2){
+    console.log(`${num1} is greater than ${num2}`);
+}
+else{
+    console.log(`${num2} is greater than ${num1}`);
+}
+
+------------------------------------------------------------------------------------------------
+
+>> Ternary Operator:
+
+>> It is required three operands
+
+syntax:
+
+condition? True:False;
+
+var a=34,b=45,res;
+
+res = (a>b)?a:b;
+console.log(res);
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Loops
+-------
+
+>> We can perform iteration using the Loop.
+--------------------------------------------
+
+>> When user to iterate/repeat one statement several times than we use the concept of Loops.
+
+>> Generally There are two types of loop.
+1. Entry Controlled Loop
+    >> while
+    >> for
+    >> for-in
+    >> for-on
+2. Exit Controlled Loop
+    >> do-while
+
+----------------------------------------------------------------------------------
+1. While Loop: 
+>> It is also known as "Entry Controlled Loop"
+>> In while loop condition will be checked first and after that statement will be executed.
+>> If condition is False then statement is not executed. It is terminted.
+
+-------------------------------------------------------------------
+
+initialization ---> start Value 
+while (condition){
+    // block of code 
+    increment/decrement // Step value how musch increment or decrement 
+}
+
+--------------------------------------------------
+inifinite loop :  a loop which is never terminate.
+
+-------------------------------------------------------------------------
+
+
+Q. Write a program to display 1 to 10 natural number using while loop.
+
+----------------------------------------------------------------------------------------------
+// Q. Write a program to display 1 to 10 natural number using while loop. 
+
+var i = 1
+
+while (i<=10){
+    console.log(i);
+    i+=1;
+}
+-------------------------------------------------------------------------------------------
+Q. Wap to display Even number from 1 to 10.
+-----------------------------------------------------------
+
+// Q. Wap to display Even number from 1 to 10.
+
+var i = 1;
+
+while (i<=10){
+    if (i%2==0){
+        console.log(i);
+    }
+    i+=1;
+}
+
+----------------------------------------------------------------------------------------
+Q. Find the sum of user input value starts from 1 using while loop. 
+
+1,10 = 55 
+1, 20 = 210
+
+---------------------------------------------------------------
+
+2. do-While 
+
+------------------
+>> It is also knwon as "Exit Controlled Loop"
+>> In do-while loop statement will be executed at once when all condition false.
+
+syntax:
+--------------
+
+do{
+    // block of code or statement
+}
+while (condition);
+
+------------------------------------------------------------------------------------------------------------
+
+Q. wap to display value from 1 to 10 using do-while 
+----------------------------------------------------------
+
+// Q. wap to display value from 1 to 10 using do-while 
+
+// Note: when all condition goes false then it executes at least one TimeRanges. 
+// var i = 1;
+
+// do{
+//     console.log(i);  // statement value 1
+//     i+=1;   // increment value
+// }
+// while (false);  // 2
+
+var i = 1;
+
+do{
+    console.log(i);
+    i+=1;
+}
+while(i<=10);
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+3.For Loop 
+--------------------
+
+for(initialization;condition;increment/decrement)
+{
+    // statement or block of code
+
+}
+
+---------------------------------------------------------------------------
+
+Q. wap to display value from 1 to 10 using for loop 
+------------------------------------------------------------------------
+// Q. wap to display value from 1 to 10 using for loop 
+for(var i=1; i<=10; i++){
+    console.log(i);
+}
+
+
+--------------------------------------------------------------------------------------------------------------
+
+for-in 
+
+for-on 
+
+-------------------------------------------------------------------------------
+
+4. for-in 
+--------------------------------
+
+>> Loop through key value is printed
+>> It is used to access only key.
+
+----------------------------------------------------------------------------------------
+
+var obj ={
+    // key:value 
+    suraj:34,
+    kamlesh:23,
+    deepak:21,
+    tikam:12,
+    subham:32
+}
+
+-------------
+var obj ={
+    // key:value 
+    suraj:34,
+    kamlesh:23,
+    deepak:21,
+    tikam:12,
+    subham:32
+}
+
+// accessing keys by default 
+// for(let result in obj){
+//     console.log(result);  // keys
+// }
+
+// accessing keys and values both 
+for(let result in obj){
+    console.log(result, ":",obj[result]);  // keys
+}
+-------------------------------------------------------------------------------------------------------------
+
+var obj ={
+    // key:value 
+    suraj:34,
+    kamlesh:23,
+    deepak:21,
+    tikam:12,
+    subham:32
+}
+
+// accessing keys by default 
+// for(let result in obj){
+//     console.log(result);  // keys
+// }
+
+// accessing keys and values both 
+// for(let result in obj){
+//     console.log(result, ":",obj[result]);  // keys
+// }
+
+
+// by default it display index value of array
+var numbers = [3,4,5,6,7,8,1,2,3,4,5];
+
+for (var i in numbers){
+    // console.log(i);  // index value as key 
+    // console.log(numbers[i]);  // values 
+    console.log(i,":",numbers[i]);  // key:value
+}
+---------------------------------------------------------------------------------------
+
+5. for-of loop 
+---------------------------------------
+>> It is used to iterate value only.
+>>for-of is used to iterate[string,array] 
+syntax:
+-------------
+for (variable of iterate)
+{
+    // block of code or statement 
+}
+
+-----------------------
+var name = "SUDHIR";
+
+
+// index value : index value need then used
+// for (var i in name){
+//     console.log(i);
+// }
+
+// value : index value no need then used.
+// for(var i of name){
+//     console.log(i);
+// }
+
+// using array 
+
+var numbers = [3,4,5,6,7,8,9,10];
+
+for (var num of numbers){
+    console.log(num);
+}
+
+-------------------------------------------------------------------
+
+
+
