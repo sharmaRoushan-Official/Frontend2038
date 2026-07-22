@@ -1,5 +1,5 @@
 
-// WAP to print 1 to 50 number using while , do while, for
+// 1. WAP to print 1 to 50 number using while , do while, for
 
 // do while
 // let  i = 0;

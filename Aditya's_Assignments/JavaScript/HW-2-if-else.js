@@ -2,9 +2,9 @@
 
 const prompt = require("prompt-sync")();
 
-var num1 = parseInt(prompt("Enter the first number: "));
+// var num1 = parseInt(prompt("Enter the first number: "));
 
-var num2 = parseInt(prompt("Enter the second number:  "));
+// var num2 = parseInt(prompt("Enter the second number:  "));
 
 // if (num1 > num2){
 //     console.log(`${num1} is greater than ${num2}`)
@@ -26,4 +26,15 @@ var num2 = parseInt(prompt("Enter the second number:  "));
 // }
 // else{
 //     console.log(`${num2} is an odd number.`)
+// }
+// WAP to input a character is a vowel or consonant.
+// var ch  = prompt("Enter the character : ");
+// const vowels = "aeiuo"
+// if (ch.length ===1){
+//     if(vowels.includes(ch)){
+//         console.log(`${ch} is a vowel.`)
+//     }
+//     else{
+//         console.log(`${ch} is a consonant`)
+//     }
 // }
