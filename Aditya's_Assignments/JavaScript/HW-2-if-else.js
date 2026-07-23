@@ -38,3 +38,34 @@ const prompt = require("prompt-sync")();
 //         console.log(`${ch} is a consonant`)
 //     }
 // }
+
+// WAP to find if a year is a leap year or not
+
+// var year = prompt("Enter the year: ");
+
+// if(year % 4 === 0 && year % 100 != 0){
+//      console.log(`${year} is a leap year`)
+
+// }
+// else{
+//        console.log(`${year} is not a leap year`)
+// }
+
+// WAP to input a character and check if it a upper, lower, digit or special character.
+//  var charac = prompt("Enter the character : ")
+
+//  var ch = charac[0]
+// const specials = "~`!@#$%^&*()-_=+/|\[]{},.:;"
+
+// if(ch === ch.toUpperCase() && ch !== ch.toLowerCase()){
+//     console.log(`${ch} is a upper case character`)
+// }
+// else if(ch === ch.toLowerCase() && ch !== ch.toUpperCase()){
+//     console.log(`${ch} is a lower case character`)
+// }
+// else if (/\d/.test(ch)){
+//     console.log(`${ch} is a digit`)
+// }
+// else if (specials.includes(ch)){
+//     console.log(`${ch} is a speical character`)
+// }

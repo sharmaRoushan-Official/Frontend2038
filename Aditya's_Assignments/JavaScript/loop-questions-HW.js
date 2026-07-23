@@ -43,4 +43,36 @@
 // while(i>=1){
 //     console.log(i)
 //     i-=1;
+// }/
+
+// 3. wap to print even number between 1 to 100 using 
+// while, do-while and for.
+
+// var i = 1;
+// let arr = []
+// while(i<= 100){
+//     if(i % 2 ===0){
+//         arr.push(i);
+//         console.log(i);
+//     }
+
+//     i++
+
+// }
+// console.log("length of the array : " +arr.length)
+// var i = 1;
+// do {
+//     if(i % 2 === 0){
+//         console.log(i)
+        
+//     }
+//     i++
+// }
+// while(i <= 100)
+
+// for loop 
+// for(var i = 1;i<= 100;i++){
+//     if (i % 2 ===0){
+//     console.log(i)
+//     }
 // }
