@@ -3663,3 +3663,217 @@ console.log(obj3);
 3. Funtion with no argument and return type. 
 4. Function with argument and return type.
 -----------------------------------------------------------------------------------------------------
+1. Function with no argumetn and no return type.
+-------------------------------------------------------------------------------
+
+// 1. Function with no argument and no return type
+function welcomeFunction(){
+    console.log("Welcome to JavaScript Functions");
+}
+welcomeFunction(); // Output: Welcome to JavaScript Functions
+
+// with object 
+var obj = welcomeFunction(); // Output: Welcome to JavaScript Functions
+console.log(obj);
+----------------------------------------------------------------------------------------------------
+
+2.
+---------------
+// 1. Function with no argument and no return type
+function welcomeFunction(){
+    console.log("Welcome to JavaScript Functions");
+}
+welcomeFunction(); // Output: Welcome to JavaScript Functions
+
+// with object 
+var obj = welcomeFunction(); // Output: Welcome to JavaScript Functions
+console.log(obj);
+
+-------------------
+3.
+---------------
+// 4. Function with no argument and return type
+function multiplicationFunction() {
+    var a=5,b=6;
+    return a*b;
+}
+var result = multiplicationFunction();
+console.log(result);
+---------------------------------
+4.
+--------------------
+// 5. Function with argument and return type
+
+
+const prompt = require("prompt-sync")({ sigint: true });  // sigint is used to handle Ctrl+C event in the terminal
+
+function multiplicationFunctionWithArgument(a, b,c)  // Formal Parameters
+{
+    return a*b*c; // Business Logic
+}     
+// PLL - Presentation Logic Layer
+var result = multiplicationFunctionWithArgument(5, 6,7); // Actual Parameterss  
+console.log(result);  
+
+var input1 = parseInt(prompt("Enter the first number: "));
+var input2 = parseInt(prompt("Enter the second number: "));
+var input3 = parseInt(prompt("Enter the third number: "));  
+
+var result2 = multiplicationFunctionWithArgument(input1, input2,input3); // Actual Parameterss
+console.log("The result of multiplication is: " + result2);
+
+--------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+JavaScript Arrow Function
+-------------------------
+An Arrow funciton is a shorter and cleaner way to write function in javascript. It was entroduced in ES6[EcmaScript2015]
+-------------------------------------------------------------------------
+
+//1. Normal Function 
+
+function add(a,b){
+    return a+b
+}
+console.log(add(5,6)); // Output: 11
+
+
+// 2. Arrow Function
+
+const add1=(a,b) => a+b;
+console.log(add1(5,6)); // Output: 11
+
+
+// other method 
+
+const add2 = (a,b) => {
+    return a+b;
+}
+var result = add2(10,5);
+console.log(result); // Output: 15
+---------------------------------------------------------------------------------------------
+
+Syntax:
+----------------------------------------
+1. Arrow Function with No parameterers
+2. Arrow function with one parameters
+3. Arrow function with multiple parameters
+4. Single line arrow function
+5. Arrow function return an object 
+6. Arrow function with default parameters
+7. array funciton with array methods 
+    map()
+    filter() 
+    reduce() 
+8. arrow function with setTimeout()
+
+------------------------------------------------------------------
+// 1. Arrow funciton with no parameter
+
+
+const greet = () =>{
+    console.log("Hello World");
+}
+greet(); // Output: Hello World
+
+
+// 2. Arrow function with one parameter
+
+const greet1 = (name) => {
+    return `Hello ${name}`;
+}
+console.log(greet1("Alice")); // Output: Hello Alice
+
+
+// 3. Arrow function with Multiple parameters
+
+const greet2 = (name, age) => {
+    return `Hello ${name}, you are ${age} years old`;
+}
+console.log(greet2("Bob", 25)); // Output: Hello Bob, you are 25 years old
+
+
+// 4. Sinle line arrow function with implicit return 
+const greet3 = (name) => `Hello ${name}`;
+console.log(greet3("Charlie")); // Output: Hello Charlie
+
+
+// 5. Arrow Function Returning an Object
+
+const student = () => ({name: "John",age: 20});  // name and age are properties of the object returned by the arrow function
+console.log(student()); // Output: { name: 'John', age: 20 }
+
+// 6. Arrow Function with Default Parameters 
+const greet4 = (name = "Guest") => {
+    return `Hello ${name}`;
+}
+console.log(greet4()); // Output: Hello Guest
+console.log(greet4("Aditya")); // Output: Hello Aditya
+
+// 7. Arrow Function with Array Methods 
+
+// 1. map() method: The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+let numbers = [1,2,3,4,5];
+let squaredNumbers = numbers.map(num => num * num); // using arrow function with map method
+console.log(squaredNumbers); // Output: [ 1, 4, 9, 16, 25 ]
+
+// 2. filter() method: The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+let evenNumbers = numbers.filter(num => num % 2 === 0); // using arrow function with filter method
+console.log(evenNumbers); // Output: [ 2, 4 ]
+
+// 3. reduce() method: The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); // Output: 15
+
+// accumulator is the accumulated value previously returned in the last invocation of the callback, or initialValue, if supplied.
+// currentValue is the current element being processed in the array.
+
+// 8. Arrow Function with setTimeout
+
+setTimeout(() => {
+    console.log("This message is displayed after 2 seconds");
+}, 2000);
+
+// 2000 milliseconds = 2 seconds
+
+--------------------------------------------------------------------------------------------------
+
+Difference Between Normal Function and Arrow Function
+
+1. Normal Function                 |           2.Arrow Function
+----------------------------------------------------------------------------
+i. Uses fucniton keywords           | i. Uses =>   [arrow]
+--------------------------------------------------------------------
+ii. Has its own this                | ii. Inherits this fom surrounding scope 
+------------------------------------------------------------------------------
+iii. Can be used as constructor(new)| iii. Cannot be used with  new. 
+---------------------------------------------------------------------------------
+iv. Has arguments object            | iv. No own arguments objects
+--------------------------------------------------------------------------------
+v.  Longer Syntax                   | V. Short and Clean syntax.
+----------------------------------------------------------------------------------------------------------
+
+
+>>  Advantages of Arrow Function
+----------------------------------
+> Short and concise syntax.
+> Easier to read and write. 
+> Best for callback functions.
+> automatically inherits this from the outer scope.
+> Commonly used with map(), filter(), reduce(), forEach() and promises.
+
+----------------------------------------------------------------------------------------
+
+>> Limitions
+-------------------------------
+> Cannot be used as a constructor.
+> Does not have its own this. 
+> Doest have have its own arguments object.
+> No suitable for object methods when you need the object's own this. 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
