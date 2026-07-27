@@ -3874,6 +3874,281 @@ v.  Longer Syntax                   | V. Short and Clean syntax.
 > No suitable for object methods when you need the object's own this. 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------------
+
+
+JavaScript Class and Object 
+----------------------------
+What is class?
+
+A class is a blueprint(template) used to create objects. It defines the properties(variables) and methods(functions) 
+that object will have.
+
+syntax:
+
+class ClassName{
+    constructor(){
+        // Initialize properties
+    }
+    methodName(){
+        //Method code 
+    }
+}
+----------------------------------------------------------
+
+Q. What is an object?
+---------------------
+An object is an instance of a class. It contains real values for the properties defined in the class.
+
+
+syntax:
+
+let obj = new ClassName();
+------------------------------------
+
+
+Import keyword 
+------------------
+1. class 
+used to create a class
+
+class Car{
+
+}
+---------------------
+2. constructor
+
+A special method that runs automaticlaly when an object is created.
+
+
+constructor(){
+    this.name = name // initialization
+}
+
+--------------------------------
+3. this 
+
+Refers to the current object.
+
+
+this.name = name
+
+----------------------------------------------
+
+4. new 
+
+creates a a new object.
+
+let obj = new Student("Ramesh",21);
+
+--------------------------------------------------
+
+> Advantages of Classes 
+
+* code becomes reusable.
+* Easy to manage large projects.
+* supports object-oriented programming [OOP].
+* Improves readability.
+* Makes maintenance easier.
+---------------------------------------------------------------
+Difference Between Class and Obejct.
+
+----------------------------------
+Class                               Object
+-------------------------------------------------
+blueprint                           real instance
+-----------------------------------------------
+Logical entity                      physical entity
+--------------------------------------------------
+created once                        many objects can be created.
+------------------------------------------------------------------
+defines properties and method       stores actual data 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+1. Create a Person class with name and age.
+2. Create a Car class with brand and price.
+3. Create a Book class with title and author.
+4. Create an Employee class to display employee details.
+5. Create a Student class to calculate total marks. 
+6. Create a Rectangle class to calculate area.
+7. Create a Circle class to calculate area and perimeter.
+8. Create a BankAccount class with deposit() and withdraw() method.
+9. Create a Mobile class with brand and Model.
+10. Create a Laptop class with company,RAM, and price.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Error Handling in java Script
+---------------------------------------------------
+
+1. What is Error Handling
+
+Error handling is the process of detecging, managing, and rsponding to errors in a program so that the program can continue running or fails gracefully.
+
+Instead of crashing, javaScript allows us to catch and handle errors.
+---------------------------------------------------------
+
+// Why Error Hanlding 
+
+console.log(name); // ReferenceError: name is not defined
+console.log("Hello world"); // This line will not be executed due to the error above
+-------------------------------------------------------------------------------------------
+
+
+syntax----------------------
+----------------
+
+try{
+    console.log(name);
+}
+catch(error){
+    console.log("Variable not found");
+}
+-------------------------------------------------------------
+
+try{
+    console.log(name); // ReferenceError: name is not defined
+}
+catch(error){
+    console.log("An error occurred: " + error.message);
+}
+console.log("Hello world"); // This line will be executed because the error was handled
+-------------------------------------------------------------------------------------------
+
+Benefits 
+
+> Prevents application crashes
+> Improves user experience
+> Makes debugging easier
+> Hanldes unexpected situtation
+> Imporve code quality
+
+-----------------------------------------------------------
+
+
+Types of Errors in Programming 
+------------------------------------
+1. Compile Time Error 
+Occurs when JavaScript syntax is incorrect.
+
+
+
+2. Runtime Error: [Reference Errors]
+Occurs when Excecuting your code. 
+-----------------------------------------------------------------------------
+
+1. Reference Error
+Occurs when using an undefined variabe.
+
+2. Type Error 
+Occurs when on operation is performed on the wrong data type. 
+
+3. Range Error 
+Occurs when a value is outside the allowed range. 
+
+
+4. URI Error [Uniform Resource Identifier.]
+Occrs when encodeURI() or decodeURI() receives an invalid URI. 
+
+5. Eval Error 
+Related to incorrect use of eval(). Rare in modern JavaScript. 
+
+--------------------------------------------------------------------------------------
+
+try Block 
+
+-----------------
+try{
+    // risky code 
+}
+catch(error){
+    //error message
+}
+
+try{
+    console.log("Hello world"); // This line will not be executed due to the error above
+}
+catch(error){
+    console.log("An error occurred: " + error.message);
+}
+
+----------------------------------------
+try{
+    let result = 10/0; // This will not throw an error, but will result in Infinity
+    console.log(result); // Infinity
+}
+catch(error){
+    console.log("An error occurred: " + error.message);
+}
+------------------------------------------------------------
+try catch finally 
+------------------
+
+try{
+    // risky code
+}
+catch(error){
+    // error message 
+}
+finally{
+    // finally message [always runs]
+}
+----------------------------------------------------------------
+try{
+    // console.log("Hello world"); // This line will not be executed due to the error above
+    console.log(a); // ReferenceError: name is not defined
+}
+catch(error){
+    console.log("An error occurred: " + error.message);     
+}
+finally{
+    console.log("This block will always be executed"); // This line will always be executed
+}
+-----------------------------------------------------------------------------------------
+
+
+throw statement 
+
+----------------------
+
+try{
+    let age = 21;
+    if(age < 18){
+        throw new Error("Age must be at least 18");
+    }
+    console.log("Age is valid");
+}
+catch(error){
+    console.log("An error occurred: " + error.message);
+}
+finally{
+    console.log("This block will always be executed"); // This line will always be executed
+}
+-----------------------------------------------------------------------------------------------------
+
+
+6.Custom Errors
+Create custom validation
+-----------------------
+function login(password){
+    if (password !== "Admin123@"){
+        throw new Error("Invalid password");
+    }
+    return "Login successful";
+}
+
+try{
+    console.log(login("Admin123")); // This will throw an error
+}   
+catch(error){
+    console.log(error.message);
+}
+
+--------------------------------------------------------------------
+
+
 
 
 
