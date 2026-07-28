@@ -69,3 +69,32 @@ const prompt = require("prompt-sync")();
 // else if (specials.includes(ch)){
 //     console.log(`${ch} is a speical character`)
 // }
+// write a program to input subject marks and find its percentage , find the following grade A ->> 90 TO 100
+// B ->> 80 to 89 ETC till E
+
+// Solution using if-else-if ladder
+var subject1 = parseInt(prompt("Enter marks for Subject 1: "));
+var subject2 = parseInt(prompt("Enter marks for Subject 2: "));
+var subject3 = parseInt(prompt("Enter marks for Subject 3: "));
+var subject4 = parseInt(prompt("Enter marks for Subject 4: "));
+var subject5 = parseInt(prompt("Enter marks for Subject 5: "));
+
+var totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
+var percentage = (totalMarks / 500) * 100;
+
+console.log(`Total Marks: ${totalMarks}/500`);
+console.log(`Percentage: ${percentage.toFixed(2)}%`);
+
+if (percentage >= 90 && percentage <= 100) {
+    console.log("Grade: A");
+} else if (percentage >= 80 && percentage < 90) {
+    console.log("Grade: B");
+} else if (percentage >= 70 && percentage < 80) {
+    console.log("Grade: C");
+} else if (percentage >= 60 && percentage < 70) {
+    console.log("Grade: D");
+} else if (percentage >= 0 && percentage < 60) {
+    console.log("Grade: E");
+} else {
+    console.log("Invalid marks entered.");
+}
