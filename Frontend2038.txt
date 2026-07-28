@@ -4149,6 +4149,388 @@ catch(error){
 --------------------------------------------------------------------
 
 
+1. What is String?
+
+A String a sequence of characters used to store and manipulate text.
+
+A string can contain:
+
+1. letters
+2. numbers
+3. symbols
+4. spaces
+5. special characters
+
+let name = "Rohan";
+let city = "Delhi";
+let message= "Welcome";
+
+console.log(name,city,message);
+
+
+-------------------
+Real-Life Examples
+
+
+Student Name - "Rohan"
+Email: - "rohan@gmail.com"
+Mobile No -> "9852746989"
+Address - > "Noida, India"
+
+--------------------------------------
+
+"JavaScript"
+
+J a v a S c r i p t 
+0 1 2 3 4 5 6 7 8 9
+---------------------------------------------------------
+
+Each characters has an index, starting from 0.
+
+----------------------------------------
+
+Ways to create strings
+
+1. Double Quotes
+
+let name = "Rohan";
+---------------------
+2. Single Quotes
+
+let city = "Delhi";
+-------------------------------------------------------------
+
+3. Backticks (Template Literals)
+
+let course = `JavaScript`;
+
+---------------------
+4. String Constructor(Rarely used)
+
+let name = new String("Rohan");
+--------------------------------------------------------------------------------------------
+
+String properties
+
+length
+
+Returns the total number of charactes.
+
+let text = "JavaScript";
+console.log(text.length);  // total length of the string.
+
+-----------------------------------------------------------
+2. String Methods
+---------------------------
+A string method is built-in funciton used to manipulate string.
+
+---------------------------------------------------------------
+
+let text = "JavaScript";
+console.log(text.length);  // total length of the string.
+
+
+
+
+// string methods
+
+// 1. toUpperCase() 
+
+let text1 = text.toUpperCase();
+console.log(text1);
+
+// 2. toLowerCase();
+
+let text2 = text.toLocaleLowerCase();
+console.log(text2);
+
+
+// 3.trim()
+// Removes spaces from both ends
+let text3 = "       Hello          ";
+console.log(text3.trim());
+
+
+// 4. trimStrart();
+
+let text4 = text3.trimStart();
+console.log(text4);
+
+// 5. trimEnd()
+
+let text5 = text3.trimEnd();
+console.log(text5);
+
+// 6. Concat()
+
+// Joins two strings 
+
+
+let first = "Hello";
+let second = "world";
+
+console.log(first.concat(" ",second));
+
+
+// 7. repeat()
+// Repeats a string
+
+let text6 = "JS";
+console.log(text6.repeat(3));
+
+
+// 8. replace();
+// Replaces the first matching text 
+
+
+let text7 = "I Like Java";
+
+console.log(text7.replace("Java","Python")); 
+
+
+// 9. replaceAll()
+
+// replaces all occurrences. 
+
+let text8 = "cat cat cat";
+console.log(text8.replaceAll("cat","dog"));
+
+// 10. split  
+// converts a string into an array 
+
+let text9 = "Apple, Mango, Banana";
+console.log(text9.split(","));
+--------------------------------------------------------------------------
+
+3. Template Literals
+
+Template literals uses backticks() instead of quotes ;
+
+They allow:
+> Multi-line strings 
+> variables interpolation
+> Expression evaluation
+
+-----------------------------------------------
+// withou template literals 
+
+// let name = "Amit";
+
+// let age = 22;
+
+// console.log("My name is "+name+" and I am "+age+" years old.");
+
+// with template literals 
+
+
+let name = "Amit";
+
+let age = 22;
+
+console.log(`My name is ${name} and I am ${age} years old.`);
+
+
+// Expression 
+
+let a = 10;
+let b = 20;
+
+console.log(`Sum = ${a+b}`);
+
+
+let message = `Welcome
+to 
+JavaScript`;
+console.log(message);
+
+----------------------------------------------------------------------------
+
+4. Escape Sequence characters
+
+Escape characters begin with a backslash(\) and allow special characters to appear in strings.
+
+
+------------------------
+Comman Escape characters
+
+--------------------
+Escape          |           Meaning 
+--------------------------------------
+\'              |Single Quote
+\"              |Double Quote 
+\\              |Backslash 
+\n              |New Line 
+\t              |Tab
+\b              |backspace 
+
+-----------------------------------------------------------
+// Double Quote 
+console.log("He said \"Hello\"");
+
+// single Quote 
+console.log("He said \'Hello\'");
+
+// New Line 
+console.log("He said \n Hello");
+
+// Tab 
+console.log("He said \t Hello");
+
+// Backslash
+console.log("He said \\ Hello");
+
+--------------------------------------------------------------------------------------
+
+5. String Searching
+
+1. indexOf() ;
+
+// 1. indexOf 
+
+let text = "JavaScript";
+
+console.log(text.indexOf("a"));
+
+// lastIndexOf 
+
+console.log(text.lastIndexOf("a"));
+
+// includes 
+// check if text exists or not ?
+
+console.log(text.includes("Script"));
+
+
+// startswith()
+
+console.log(text.startsWith("Java"));
+
+// endswith()
+
+console.log(text.endsWith("Java"));
+console.log(text.endsWith("Script"));
+
+
+// match 
+// Returned matched text. 
+let text1 = "I Love java";
+console.log(text1.match("java"));
+----------------------------------------------------------------------------------
+
+6. String Slicing 
+
+Used to extract part of a string. 
+
+-----------------------------------------------------
+
+// 1. slice() 
+
+let text = "JavaScript";
+
+console.log(text.slice(0,4));
+
+// negative 
+
+console.log(text.slice(-1));
+console.log(text.slice(-3));
+
+// substring 
+
+let text1 = "JavaScript";
+console.log(text1.substring(0,4));
+console.log(text1.substring(-1000));  // no effect 
+
+// substring() does not support negative indexes; 
+
+// substr() (Deprecated) 
+
+let text2 = "JavaScript";
+
+console.log(text2.substr(4,6)); 
+
+// Note: Avoid substr() in new code beacuse it is deprecated.
+
+// -------------------------------------------- 
+
+// Difference 
+
+
+Method          | Negative Index            | Second Parameters
+----------------------------------------------------------------
+slice()             ✅ Yes                      End Index 
+-------------
+substring()         ❌ No                       End Index 
+----------------------
+substr()            ✅ Yes                      Length(Deprecated)
+------------------------------------------------------------------------------------------------------------
+
+7. String FORMATTING
+Formatting means arranging or display strings in readable way. 
+
+-----------------
+
+let first = "Amit";
+let second = "Singh";
+
+console.log(first+" "+ second);
+
+
+// Template Literals 
+
+console.log(`${first} ${second}`);
+
+// padding 
+
+// padStart() 
+
+let num = "5";
+console.log(num.padStart(3,"0"));
+
+
+// padEnd() 
+
+console.log(num.padEnd(3,"0"));
+
+// Character Access 
+
+
+let text = "JavA";
+
+console.log(text.charAt(2));  // It will return value of this 2 position[index value]
+
+// using Index value 
+
+console.log(text[2]);
+
+// charCodeAt() 
+
+console.log(text.charCodeAt(3)); // it will return ASCII Value
+
+
+---------------------------------------------
+
+at()
+
+Accesses characters using positive or negative indxes 
+
+
+// at() 
+
+console.log(text.at(-1));
+
+
+----------------------------------------------------------------
+
+Immutable Nature of Strings 
+
+------------------------------------------
+
+Strings are immutable, meaning you cannot change a characters directly.
+
+-----------------------------
+
+
+
 
 
 
