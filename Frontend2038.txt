@@ -4925,7 +4925,7 @@ console.log(result3);
 12. Arrays
 13. Class and Objects 
 
-14. Objects ---> Tomorrow 
+14. Objects ---> Done
 15. Date and Time 
 16. Math Object 
 17. Error Handling  ---- Done 
@@ -4943,5 +4943,479 @@ console.log(result3);
     >> Named Export
     >> Default Export
 27. Regular Expression 
+
+-----------------------------------------------------------------------
+14. Objects ---> Done
+-------------------
+1. What is an Object?
+
+Definition
+An object is a collection of key-values pairs.
+
+A key is the property name.
+
+A value is the data sotred in that property.
+
+Objects are used to represent real-world entities.
+
+
+Example ;
+
+let student ={
+    name:"Ram",
+    age:22,
+    city:"Delhi"
+};
+console.log(student);
+console.log(typeof(student));
+---------------------------------------------------------------------------------
+
+Why Do we need object?
+
+Suppose you wanto to store information about a student. 
+
+Without object 
+
+let name = "Ram";
+let age = 22;
+let city = "Delhi";
+let course = "JavaScript";
+----------------------------------------------------------------
+Mananging many variables becomes difficult.
+
+Using Object 
+-----------------
+let student ={
+    name:"Ram",
+    age:22,
+    city:"Delhi"
+};
+console.log(student);
+console.log(typeof(student));
+------------------------------------------------------------------------
+Everthing is stored inside one variable.
+------------------------------------------------------------------------------------------
+
+Object Rules
+---------------
+➜ Keys should be unique.
+➜ Values can be any datatype.
+➜ Objects can contain arrays.
+➜ objects can contain other objects.
+➜ Object can contain function.
+------------------------------------------------------------------------------------
+// Access Object Properties 
+
+// Dot Notation 
+let student ={
+    name:"Ram",
+    age:22,
+    city:"Delhi"
+};
+console.log(student);
+console.log(typeof(student));
+
+// Dot Notation 
+
+console.log(student.name);
+
+// Bracket Notation 
+
+console.log(student['name']);
+
+
+// Modify Property 
+
+student.age = 25;
+console.log(student);
+
+
+// Add Property
+
+student.course = "Python";
+console.log(student);
+
+// Delete Property 
+
+
+delete student.city;
+console.log(student);
+------------------------------------------------------------
+2.Object Creation 
+
+JavaScript provides multiple ways to create an objects. 
+
+-------------------------------------------------------------
+// Method 1
+
+let student = {
+    name:"Ram",
+    age:22
+};
+console.log(student);
+
+// This is the most commonly used method 
+
+
+// Method 2
+let student1 = new Object();
+
+student1.name = "Ram";
+student1.age = 25;
+console.log(student1);
+
+
+// Method 3 Constructor Function
+
+// Useful when creating many similar objects 
+function Student2(name,age){
+    this.name = name;
+    this.age = age;
+};
+let s1 = new Student2("Ram",22);
+let s2 = new Student2("Shyam",25);
+
+console.log(s1);
+console.log(s2);
+
+// Method 4 [Object.create()]
+
+// creates a new object using another object as its prototype 
+
+let person = {
+    city:"Delhi"
+};
+
+let student3 = Object.create(person);
+student3.name = "Ram";
+console.log(person);
+console.log(student3.name);
+console.log(student3.city);
+--------------------------------------------------------------------------------------
+
+Comparison
+-----------------
+
+Mthod                               Best Used 
+---------------------------------------------------------------
+Object Literal                      Small objects
+--------------------
+new Object()                    Rarely used 
+-----------------------------
+Constructor Function            Multiple similar objects 
+------------------------------
+Object.create()                 Prototype inheritance 
+---------------------------------------------------------------
+
+
+3. Object Methods 
+----------------
+A funciton inside an object is called an Obejct Method.
+----------------------------------------------------------
+Example 
+------------------
+
+let student = {
+    name:"Ram",
+    age:22,
+    display:function(){
+        console.log(this.name,this.age);
+    }
+};
+student.display();
+
+let student = {
+    name:"Ram",
+    age:22,
+    display:function(){
+        console.log(this.name,this.age);
+    }
+};
+student.display();
+
+
+// Method Shorthand(ES6)
+
+
+let student1 = {
+    name:"Ram",
+    display1(){
+        console.log(this.name);
+    }
+};
+student1.display1();
+
+
+// Understanding this 
+
+// this refers to the current Object. 
+
+// exmaple 
+
+let employee = {
+    name:"Amit",
+    salary:50000,
+    details(){
+        console.log(this.name);
+        console.log(this.salary);
+    }
+}
+employee.details();
+------------------------------------------------------------------------------
+
+4. Nested Objects 
+
+An object inside another object is called a Nested Object. 
+--------------------
+Example 
+
+
+let student = {
+    name:"Ram",
+    address:{
+        city:"Delhi",
+        state:"Delhi",
+        pin:11001
+    }
+};
+console.log(student); // name,addres
+console.log(student.address); // address: city,state,pin
+console.log(student.address.city); // city
+
+
+-----------------------------------------------------
+Object Destructuring 
+
+------------------
+Extracting object properties into a variables is called object Destructuring. 
+
+----------------------------------------------
+
+// without destructuring 
+
+// let student = {
+//     name:"Ram",
+//     age:22
+// }
+// let name = student.name;
+// let age = student.age;
+
+// console.log(name,age);
+
+
+// with destructring 
+
+
+let student1 = {
+    name1 : "Ram",
+    age: 22
+};
+let {name1,age} = student1;
+console.log(name1);
+console.log(age);
+
+
+
+// Rename Variables
+
+
+let{name1:studentName, age:studentAge} = student1;
+console.log(studentName, studentAge);
+
+
+// Default Values
+
+let {name2,city1="Mumbai"} = student1;
+console.log(city1);
+
+-----------------------------------------------------------------------------------
+
+
+6. Object.keys()
+
+Return an array containing all property names (keys).
+------------------------------------------------------------------
+
+syntax:
+
+Object.keys(objectName);
+-------------------------------------------------------------------------------------------
+
+let student ={
+    name:"Ram",
+    age:22,
+    city:"Delhi"
+};
+
+console.log(Object.keys(student));
+
+
+-----------------------------------------------------------------------------
+7.Object.values()
+
+
+Returns all property values in an array.
+
+----------------------------------------------
+
+8. Object.entries()
+
+Return an array of [key,value] pairs. 
+
+
+let student ={
+    name:"Ram",
+    age:22,
+    city:"Delhi"
+};
+
+
+// Object.keys()
+console.log(Object.keys(student));
+
+// Object.values()
+console.log(Object.values(student));
+
+// Object.entries()
+
+console.log(Object.entries(student));
+
+----------------------------------------------------------------------
+
+Difference 
+-----------------------------
+Method                          Returns 
+-----------------------------------------------
+Object.keys()                   Keys 
+Object.values()                 values 
+Object.entries()                key-value paris 
+----------------------------------------------------------------------------------
+
+9. Object.assign()
+
+Copies properties from one or more objects into another object. 
+-----------------
+syntax:
+    Object.assign(target,source1,sourse2);
+-----------------------------------------------------------------
+
+let obj1 = {
+    a:1,
+    b:2
+};
+let obj2 = {
+    c:3,
+    d:4
+};
+
+result = Object.assign({},obj1,obj2);
+console.log(result);
+------------------------------------------------------------------------------------------
+
+let obj1 = {
+    a:1,
+    b:2
+};
+let obj2 = {
+    c:3,
+    d:4
+};
+
+result = Object.assign({},obj1,obj2);
+console.log(result);
+
+
+/// Overwrites values
+
+let obj3 = {
+    name: "Ram"
+};
+let obj4 ={
+    name : "Amit",
+    age : 22
+};
+
+console.log(Object.assign({},obj3,obj4));
+------------------------------------------------------------------
+
+10.Spread Operator(...)
+
+
+The spread operator copies or mergses object properties into a new object. 
+
+
+------------------------------------------
+
+Copy an Object  
+-------------------
+
+// Copy an Object
+let student = {
+    name:"Ram",
+    age:22
+};
+
+let copy = {
+    ...student // spread operator
+};
+console.log(student);
+console.log(copy);
+
+// Merge Object
+let obj1 = {
+    a:1
+};
+let obj2={
+    b:2
+};
+let obj3 ={
+    ...obj1,
+    ...obj2
+};
+
+console.log(obj3);
+
+// Override Properties
+
+// -----------------
+
+let person ={
+    name : "Ram",
+    city : "Delhi"
+};
+
+let updated = {
+    ...person,
+    city:"Mumbai"
+};
+console.log(person);
+console.log(updated);  // city override 
+
+
+---------------------------------------------------------------------------------------------
+
+
+Object.assign() vs Spread Operator
+
+
+Feature                 Object.assign()                 SpreadOperator
+--------------------------------------------------------------------------------
+
+Copies object           ✅                              ✅
+--------------------------------
+Merges Objeft           ✅                              ✅
+--------------------------------------------------------------------
+Creates new Object      ✅                              ✅
+-----------------------------------------------------------------
+Modern Syntax           ❌                              ✅
+----------------------------------------------------------------------
+Readability             Good                            Excellent 
+--------------------------------------
+Most Preferred          Less                             More 
+-----------------------------------------------------------------------------------
+
+
+
+
 
 
