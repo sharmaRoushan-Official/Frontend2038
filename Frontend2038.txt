@@ -5415,6 +5415,24 @@ Most Preferred          Less                             More
 -----------------------------------------------------------------------------------
 
 
+1. What is Date and Time?
+------------------------------
+JavaScript provides a built-in Date object for working with dates and times.
+
+We can use it:
+
+* Get the current date
+* Get the current time 
+* Create a spececific date 
+* Extract date component 
+* Change Dates
+* Compare dates 
+* Calculate difference between dates 
+* Format dates for users. 
+--------------------------------------------------------------------------------
+
+
+// 9. Date.now
 
 
 
