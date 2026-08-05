@@ -5432,7 +5432,253 @@ We can use it:
 --------------------------------------------------------------------------------
 
 
-// 9. Date.now
+
+16. What is DOM?
+
+DOM stands for 
+Document Object Model 
+
+When a browser loads an HTM Page, it creates a tree-like representation of that HTM Document.
+
+
+JavaScript can use this representation to: 
+
+
+✓Find HTML elements
+✓Change text
+✓Change HTML 
+✓Change CSS 
+✓Add elements 
+✓Remove elements 
+✓Handle events 
+✓Validate forms 
+✓Create dyntamic webpages.
+
+The Browser creates a DOM Structure approximately like 
+
+Document 
+Document
+└── html
+    ├── head
+    └── body
+        ├── h1
+        │   └── "Hello"
+        └── p
+            └── "Welcome to JavaScript"
+--------------------------------------------
+
+3. Why Do we need DOM?
+
+HTML is primarily used to structure a webapage. 
+
+CSS is used to style it. 
+JavaScript is used to make it interactive.
+
+HTML
+  |
+Structure
+
+
+CSS 
+ |
+Design 
+
+JavaScript 
+   |
+Behavior/Interaction  
+
+DOM
+ | 
+JavaScript -> HTML/CSS 
+-------------------------------------------------------------
+
+4. What is document?
+
+document is a global object provided by the browser that respresnts the current HTML document. 
+
+
+Example 
+
+console.log(document)
+
+
+document.getElementbyId("title");
+
+
+-------------
+5.DOM tree
+--------------------
+
+Document
+|― html 
+    |― head 
+    |    |― title 
+    |― body
+        |― h1
+        |― p 
+        |― button 
+
+------------------------------------------------
+
+6. DOM nodejs 
+Everything in the DOM is represented as a node.
+
+Important node types:
+
+> Document node ->document 
+> Element node  -> H1,p,title, body, table, tr, td, label
+> Text node -> Hello 
+> Attribute-related information
+
+
+--------------------------------------------------
+
+<h1>Hello</h1>
+
+h1 -> Element Node 
+Hello -> Text Node 
+
+
+----------------------------------------------------------------------------
+7. Selecting HTML Elements 
+
+Before javaScsript can modiffy an element, we generally need to select it. 
+
+
+The Most Important selection methods are :
+
+document.getElementById();
+document.getElementByClassName();
+document.getElementByTagName();
+document.getElementBySelector();
+doucment.getElementByAll();
+
+-----------------------------------------------------------------------------
+
+
+13. querySelector() VS quqerySelectorAll() 
+
+|Method|                    |Result|
+querySelector()             First Metching element 
+querySelectorAll()          All matching element. 
+
+--------------------------------------------------------------
+
+
+14. Selecting Elements 
+-----------------
+
+Method                  Selection 
+--------------------------------------------------------------
+getElementById()            ID 
+getElementByClassName()     Class 
+getElementByTagName()       Tag 
+querySelector()             First CSS match 
+querySelectorAll()          All CSS matches 
+-----------------------------------------------------------------------------------------------
+
+15. Changing HTML Content 
+---------------------------------------------
+
+>> There are two important properties 
+>> 1. textContent
+>> 2. innerHTML 
+---------------------------------------------------------------------
+
+
+16. textContent
+Changes or reads text.
+
+
+17. innerHTML
+Gets or sets HTML inside an element.
+
+--------------------------------------------
+
+
+18. textContent VS innerHTML
+--------------------------------------------------
+
+19. Changing CSS 
+-------------------------------------
+
+javaScript can modifiy cass throught the style property. 
+-------------------------------------
+
+20. CSS Property Naming
+
+CSS: 
+backgound-color 
+
+
+-----------------
+
+JavaScirpt
+
+element.style.color.backgoundColor
+
+--------------------------------
+
+
+21. Changing Multiple Styles.
+
+---------------------------------------
+
+
+22. using classList
+
+Instead of changing individual styles repeatedly, it is often better to add/remove CSS classes.
+
+
+HTML: 
+-----------------
+
+23. add classList
+
+24. remove classList
+
+
+25. classList.toggle();
+
+
+> Dark Mode 
+> Menus 
+> Show/hide section 
+> Active buttons 
+
+
+26. classList.contains() 
+
+check whether an element conatins a class.
+
+
+-------------------------------
+27. Woring with attributes
+HTMl 
+
+28.getAttibute
+
+29.setAttribute
+
+30..removeattribute
+
+31.hasAttribute
+
+32.Creating Element 
+--------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
