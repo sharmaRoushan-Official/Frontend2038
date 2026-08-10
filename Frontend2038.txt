@@ -5666,6 +5666,96 @@ HTMl
 
 32.Creating Element 
 --------------------------------
+Javascript can create HTML elements dynamically.
+
+-------------------------------------------------------------------------------------
+append()
+append() can also accept text and multiple nodes.
+
+prepend()
+adds content at the beginning.
+
+
+appendChild()
+
+adds a node as the last child 
+
+Important:
+
+appendChild() expects a Node 
+
+
+39. remove()
+
+an element can remove itself from the DOM.
+
+40. removeChild()
+a parent can remove a child 
+
+
+41. DOM Traversing 
+-----
+
+DOM traversal means moving between related elements 
+
+
+Important Properties:
+
+parentElement
+children
+firstElementChild
+lastElementChild
+nextElementSibling
+previousElementSibling
+
+-------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+
+48. DOM Events 
+------------------------------
+
+Events are action that happen in a webpage.
+
+Examples:
+
+* click 
+* Double click 
+* Mouse Movement 
+* Keybord input 
+* Form submission 
+* Foucus 
+* Blue 
+* Change 
+
+JavaScript can respond to these events. 
+---------------------------------------------------------------------------------------------------
+49. addEventListener()
+
+The preferred general way to attach event handlers.
+
+syntax:
+
+element.addEventListener("event",function);
+-----------------------------------------------------------
+
+50. ClickEvent 
+-------------------------------------
+
+
+51. Event Object
+--------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>Click anywhere in the document to display "Hello World!".</p>
+
+<p id="demo"></p>
+
+<!-- <button ></button> -->
+
+<button>hello</button>
+
+<script>
+document.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+let button = document.querySelector("button");
+
+button.addEventListener("click",function(){
+    console.log("Button clicked");
+});
+</script>
+
+</body>
+</html>
