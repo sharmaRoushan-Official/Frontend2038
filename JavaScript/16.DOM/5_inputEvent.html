@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button id="btn">Click Me</button> -->
+
+    <input id="username">
+
+    <form id="myform">
+        <input id="username">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    // let btn = document.getElementById('btn');
+    // btn.addEventListener("click",function(){
+    //     alert("Button Clicked!")
+    // });
+
+    // let username = document.getElementById('username')
+
+    // username.addEventListener("input",function(event){
+    //     console.log(event.target.value);
+    // })
+    // // The event firest whenever the input value changes. 
+
+    // // Change event
+
+    // username.addEventListener("change",function(){
+    //     console.log("Value Changed");
+    // })
+    // The exact timing differ from the input event, especially for text input 
+
+    let form = document.getElementById("myform");
+
+    // form.addEventListener("submit",function(event){
+    //     event.preventDefault();
+    //     console.log("Form Submitted");
+    // })
+
+    // preventDefault()
+    // some browser action happen automatically. 
+    // for Example: 
+    // submitting a form normally cuase navigation/reloading 
+
+    // prevent thet default browser behavior. 
+
+    let username = document.getElementById("username");
+    console.log(username.value);
+</script>
+
+</html>

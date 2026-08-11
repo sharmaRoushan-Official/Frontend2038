@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <h1 id="text">Hello world</h1>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+    btn.addEventListener("click",function(){
+        alert("Button Clicked!")
+    });
+
+    let box = document.getElementById('text');
+    box.addEventListener("mouseenter",function(){
+        console.log("Mouse Entered");
+    })
+
+    let box1 = document.getElementById('text');
+    box1.addEventListener("mouseover",function(){
+        console.log("Mouse Overed");
+    })
+    
+    // keyboard event
+
+    document.addEventListener("keypress",function(event){
+        console.log(event.key);
+    })
+
+</script>
+</html>

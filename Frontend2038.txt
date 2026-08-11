@@ -5747,6 +5747,70 @@ element.addEventListener("event",function);
 51. Event Object
 --------------------------
 
+Event handlers can receive an event object.
+
+52. Event.target 
+
+53.Mouse Events 
+
+Common Mouse Event 
+
+click
+dbclick
+mousedown
+mouseup
+mousemove
+mousenter
+mouseover
+mouseout
+
+
+-----------------------------------------------
+
+
+
+54. KeyBorad Event 
+
+kydown
+keyup
+
+-------------------------
+
+
+55. Input Event 
+
+56. change Event 
+
+
+57. For submit event 
+
+
+58. preventDefault() 
+
+59. DOM Form value 
+
+
+60.Form Validataion
+
+
+61. Dom Content Loaded 
+
+
+1. Counter App
+2. Color Changer
+3. To-Do List
+4. Digital Clock
+5. Show / Hide Password
+6. Character Counter
+7. Dark / Light Mode
+8. Image Slider
+9. Simple Calculator
+10. Quiz App
+
+---------------------------------------------------------------------------------------------------------
+
+
+
 
 
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+    btn.addEventListener("click",function(){
+        alert("Button Clicked!")
+    });
+
+    btn.addEventListener("click",function(event){
+        console.log(event);
+    })
+    // This event object contains information about the evnet 
+
+    // event.target 
+
+    btn.addEventListener("click",function(event){
+        console.log(event.target);
+    })
+    // useful when multiple elements. 
+
+    
+</script>
+</html>
