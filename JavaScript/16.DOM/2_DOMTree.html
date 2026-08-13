@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+</head>
+<body>
+    // 8. get element by ID 
+    <h1 id="title">Hello</h1>
+    <p>Welcome</p>
+    <button>Click Me</button>
+
+    <input type="text">
+
+
+    // 9. get element by class Name 
+
+    <p class="message">Hello</p>
+    <p class="message">Welcome</p>
+
+
+</body>
+<script>
+    // console.log(document.getElementById('title'));
+    let title = document.getElementById("title");
+    console.log(title);
+
+    // changeText 
+    let title1 = title.textContent="Hello JavaScript";
+
+    //getelement by id 
+    let message = document.getElementsByClassName("message");
+    console.log(message);
+
+    //10. Tag Selector
+    let paragraph = document.getElementsByTagName("p");
+    console.log("-----",paragraph);
+
+    // 11.queryselector 
+    // This is one of the most important DOM methods, it returns the first element matching a CSS selector. 
+
+    // tag 
+    let heading = document.querySelector("h1");
+    console.log(heading);
+    
+    // byID 
+    let title2 = document.querySelector("#title");
+    console.log(title2);
+
+    // byclass  
+    let box = document.querySelector(".message");
+    console.log(box);
+
+    // attribute 
+    let input = document.querySelector("input[type='text']");
+    console.table(input);
+
+
+</script>
+</html>

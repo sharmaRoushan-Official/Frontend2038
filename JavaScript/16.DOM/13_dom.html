@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child">Hello</p>
+        <p id="child">Hello world</p>
+    </div>
+    <p id="one">One</p>
+    <p id="two">Two</p>
+    
+</body>
+<script>
+    let child = document.getElementById("child");
+    console.log(child.parentElement);
+
+    // 44.children 
+    let parent = document.getElementById('parent');
+    console.log(parent.children);
+
+    // 44. firstElementChild 
+    console.log(parent.firstElementChild);
+
+    // 45.lastElementChild 
+    console.log(parent.lastElementChild);
+
+    // 46. nextElementSibling
+    let one = document.getElementById('one');
+    console.log(one.nextElementSibling);
+
+    let div1 = document.getElementById('parent');
+    console.log(div1.nextElementSibling);
+
+    // 47. previousElementSibling
+    let two = document.getElementById('two');
+    console.log(two.previousElementSibling);
+
+</script>
+</html>

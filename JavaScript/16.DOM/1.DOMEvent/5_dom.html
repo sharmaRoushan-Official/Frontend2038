@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button id="btn">Click Me</button> -->
+
+    <!-- <input id="username"> -->
+
+    <form id="myform">
+        <input id="username">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    let form = document.getElementById("myform");
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+
+        let username = document.getElementById('username');
+
+        if (username.value == ""){
+            alert("Username is required");
+        }
+        else{
+            alert("Form submitted");
+        }
+    })
+
+    document.addEventListener("DOMContentLoaded",function(){
+        console.log("DOM is ready");
+    })
+
+    // Windows VS Document 
+
+    // Windows representes the browser window/environment . 
+
+    // window.alert("Hello world");
+    // window.setTimeout();
+    // window.location;
+
+    // document 
+    // document.getElementById();
+    // document.querySelector();
+    // document.createElement();
+</script>
+
+</html>

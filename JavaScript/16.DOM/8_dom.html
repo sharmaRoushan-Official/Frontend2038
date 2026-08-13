@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="box">Hello World</h1>
+
+    <img src="../16.DOM/download.jpeg" alt="studentImage" id="photo">
+</body>
+<script>
+    let box = document.getElementById("box");
+    box.classList.toggle("active");
+
+
+    if (box.classList.contains("active")) {
+        console.log("Active class is present");
+    } else {
+        console.log("Active class is not present");
+    }
+
+    let image = document.getElementById("photo");
+    
+    console.log(image.getAttribute('src'));
+    console.log(image.getAttribute('alt'));
+    console.log(image.getAttribute('id'));
+
+
+    // setAttribute
+    // image.setAttribute("src","new-image.jpg");
+    image.setAttribute("alt","studentGirlImage");
+    // getAttribute
+    console.log(image.getAttribute('alt'));
+
+    // removeAttribute
+    console.log(image.removeAttribute('alt'));
+    console.log(image.getAttribute('alt'));
+
+
+    // check attribute 
+    console.log(image.hasAttribute('src'));
+    console.log(image.hasAttribute('alt'));
+
+</script>
+</html>
