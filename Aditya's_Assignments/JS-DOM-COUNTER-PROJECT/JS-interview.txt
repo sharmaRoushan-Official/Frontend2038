@@ -1,0 +1,23 @@
+1. What is the DOM?
+Answer: The DOM is a programming interface for HTML/XML documents.
+It represents the page as a tree of objects (nodes) so that JavaScript can access,
+modify, and interact with the document's structure, style, and content.
+
+2. Is the DOM part of JavaScript?
+Answer: No. The DOM is a Web API provided by the browser. 
+JavaScript is the language used to interact with it. 
+In Node.js (server-side), there is no DOM built-in.
+
+3. What is the difference between HTML source code and the DOM?
+Answer: HTML source is static text. The DOM is a live, 
+structured representation created by the browser after parsing the HTML.
+JavaScript changes affect the DOM, not the original HTML source.
+
+HTML source (static text on disk)  →  
+Browser parses it  →  DOM (live object in memory)  →  JavaScript modifies DOM
+
+So:
+
+View Page Source = Original HTML file
+
+Inspect Element = Live DOM (with JavaScript changes)
