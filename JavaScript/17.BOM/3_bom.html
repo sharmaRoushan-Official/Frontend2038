@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log(window.innerHeight);
+        // console.log(window.innerWidth);
+
+        // console.log(
+        //     "Inner Width:", window.innerWidth,
+        //     "Inner Height:", window.innerHeight
+        // );
+        // console.log(
+        //     "Outer Width:", window.outerWidth,
+        //     "Outer Height:", window.outerHeight
+        // );
+        // console.log(
+        //     "Device Pixel Ratio:",window.devicePixelRatio
+        // );
+
+        // // windows.open() 
+
+        // window.open("https://exmaple.com","__blank");
+
+        // 11.windows.close() 
+
+        // window.close();
+        // tab close 
+
+        // windows.alert() 
+        // window.alert("Welcome");
+
+
+        // window.confirm()
+        // let result  = confirm(
+        //     "Do you want to continue?"
+        // );
+        // console.log(result);
+        // if (confirm("Delete this item?")){
+        //     console.log("Deleted");
+        // }
+        // else{
+        //     console.log("Aborted");
+        // }
+
+        // 
+
+        // 14. Window.prompt() 
+        // let name = prompt("Enter your name");
+        // console.log(name,typeof(name));
+
+        // let age = Number(prompt("Enter your age: "));
+        // console.log(age,typeof(age));
+
+        // 15. Browser History 
+
+        // console.log(window.history);
+
+        // console.log(history.back());
+
+        // console.log(history.forward());
+
+        // console.log(history.go(-1));
+
+        // console.log(history.go(1));
+
+        // console.log(history.length);
+
+
+        // 20. History API 
+
+        // history.pushState(
+        //     {},"","/home"
+        // );
+
+        // history.pushState(
+        //     state,title,url
+        // )
+        // 22
+        // history.pushState(
+        //     {page:"home"},
+        //     "Hello world",
+        //     "/home"
+        // )
+
+
+        // 23. propstateEvent
+        // window.addEventListener("popstate", function(event){
+        //     console.log("History Changed");
+        //     console.log(event.state);
+        // });
+        // history.pushState({ page: "home" }, "", "/home");
+        // // history.pushState({ page: "about" }, "", "/about");
+
+        // window.addEventListener("popstate", function (event) {
+        //     console.log("History Changed");
+        //     console.log(event.state);
+        // });
+
+        // 24.navigator
+        // console.log(navigator);
+
+        // console.log(navigator.userAgent);
+
+        // console.log(navigator.language);
+
+        // console.log(navigator.onLine);
+
+        // console.log(location);
+        // console.log("--------------------");
+        // console.log(window.location);
+
+        // 40. Example of URL 
+
+        // console.log("href",location.href);
+
+        // console.log(location.protocol);
+
+        // console.log(location.hostname);
+
+        // console.log(location.port);
+
+        // console.log(location.pathname);
+
+        // console.log(location.search);
+
+        // console.log(location.hash);
+
+
+        location.href = "https://example.com";
+        console.log("href",location.href);
+
+        location.assign(
+            "https://example.com"
+        );
+        // console.log(location.assign);
+
+        // location.replace(
+        //     "https://example1.com"
+        // )
+
+        setTimeout(function(){
+            console.log("Hello");
+        },2000)
+
+
+    </script>
+</body>
+
+</html>

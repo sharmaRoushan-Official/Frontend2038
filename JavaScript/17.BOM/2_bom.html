@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // windows represents the browser window or browser context. 
+    // console.log(windows);  
+    // window.alert('Hello')
+    
+
+    // alert('Hello');
+
+    // Bot work in normal browser context 
+
+    var name = "Ravi";  // global variable 
+    
+    console.log(window.name);
+
+    console.log("ravi");
+
+    let age = 25;  // block variable 
+
+    console.log(age);
+
+    // This doest not crate a correspoinding window.age propert 
+    console.log(window.age);
+
+    // Every global variable becomes a window property not block variable 
+</script>
+</html>

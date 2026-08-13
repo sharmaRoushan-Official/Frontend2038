@@ -5809,6 +5809,124 @@ keyup
 
 ---------------------------------------------------------------------------------------------------------
 
+BOM - 
+
+1. What is BOM? 
+
+BOM - Browser Object Moduel 
+
+BOM Provides JavaScript objects and APIs for interacting with the Browser environment, rather than the HTML document itself. 
+
+--------------------------------------------------------------
+
+
+The Most important BOM-related objects are:
+
+
+> Windows 
+> history 
+> navigator 
+> Screen 
+> Location 
+
+And Browser timing function such as  
+
+setTimeout() 
+setInterval() 
+
+------------------------------------------------------------
+
+2. DOM vs BOM 
+--------------------
+This is the first concept 
+
+DOM 
+
+Dom is related to the webpage/document 
+
+document.getElementById("title");
+
+---------------------------------------------
+
+BOM 
+
+BOM is related to the browser/window environment 
+
+
+------------------------------------------------
+
+DOM - > Webpage 
+
+BOM -> Browser 
+
+------------------------------------------------------------------------
+
+Borwser Object Model 
+
+----------------------------------
+
+Window 
+|
+|---- Document    -> DOM 
+|
+|---- history 
+|
+|---- navigator 
+|
+|---- screen 
+|
+|---- location 
+|
+|---- local storage 
+|
+|---- seesionStorage 
+|
+|---- console 
+|
+|---- setTimeout() 
+|
+|---- setInterval()
+
+-----------------------------------------------------------------------------
+
+
+
+5. Global Variables and windows 
+
+
+
+6. Common windows Properties 
+
+windows.innerWidth
+windows.innerHeight
+windows.outerWidth 
+windows.outerHeight
+windows.devicePixelRatio 
+--------------------------------------------------------------------
+
+
+window vs Screen 
+
+Windonw.innerWidth 
+window.innerHeight
+
+Usually relates to the browser viewport 
+
+
+Screen
+
+screen.width
+screen.height
+
+Relates to the display/screen.
+
+
+
+-----------------------------------------------------------
+
+
+
+
 
 
 

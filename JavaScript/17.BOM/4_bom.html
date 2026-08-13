@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <script>
+        console.log("Current Status:", navigator.onLine);
+        window.addEventListener(
+            "online",
+            function(){
+                console.log("Browser is Online");
+            }
+        );
+        window.addEventListener(
+            "offline",
+            function(){
+                console.log("Browser is Offiline");
+            }
+        )
+
+
+        navigator.geolocation.getCurrentPosition(
+            function(position){
+                console.log(position.coords.latitude);
+                console.log(position.coords.longitude);
+            }
+        )
+
+
+        // 31.screeb
+
+        console.log(screen);
+        console.log(screen.width);
+        console.log(screen.height);
+
+
+        console.log(screen.availWidth);
+        console.log(screen.availHeight);
+        console.log(screen.colorDepth);
+
+        console.log(screen.pixelDepth);
+
+        
+    </script>
+</html>
