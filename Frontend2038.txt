@@ -5930,6 +5930,60 @@ OOPs in JavaScript
 
 
 
+----------------------------
+
+JavaScript Asynchrounous Function
+
+---------------------------------------------
+
+Asynchronous JavaScript is one of the most important topics after functions, arrays, objects, DOM, BOM and OOPs.
+-------------------------------------------------------------------------------------------
+
+Synchrounous
+    |
+Asynchronous
+    | 
+Call Stack 
+    |
+Callback
+    |
+Browser APIs
+    |
+Event Loop 
+    |
+Promises 
+    |
+.then()/ .catch() 
+    |
+async()/ await 
+    |
+fetch() 
+    |
+Error Hanlding 
+    |
+Promise.all()
+
+--------------------------------------------------------------------------------------------
+
+1. What is Asynchrounous JavaScript? 
+
+Asynchronous programming allows javaScript to start an operations and continue doing other work instead of waiting for that operation to finish.
+
+Common Asynchrounous operations 
+
+> API request 
+> Network requests 
+> Timers 
+> Reading files in environment such as Node.js 
+> Databse Operations 
+> User events 
+> Some browser APIs 
+-------------------------------------------------
+
+
+
+
+
 
 
 
