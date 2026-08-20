@@ -245,23 +245,106 @@
 
 // 15. Creating a Promise 
 
-let promise = new Promise(
-    function(resolve, reject){
-        // let success = true; 
-        // let success = false;
-        // let success = false;
-        let success = true;
+// let promise = new Promise(
+//     function(resolve, reject){
+//         // let success = true; 
+//         // let success = false;
+//         // let success = false;
+//         let success = true;
 
+//         if (success){
+//             resolve("Success");
+//         }
+//         else{
+//             reject("Failed")
+//         }
+
+//     }
+// )
+// console.log(promise);
+
+// 16. resolve()
+
+// Used when the asynchronous operations Succeeds. 
+
+// resolve("Data Received")
+
+
+// 17. reject()
+
+// Used when the opration fails
+
+// reject("Something went wrong") 
+
+// 18. Consuming a Promise 
+
+// // Use 
+// .then()
+// .catch()
+
+
+let promise = new Promise(
+    function(resolve,reject){
+        let success = true;
         if (success){
-            resolve("Success");
+            resolve("Sucess");
         }
         else{
             reject("Failed")
         }
-
     }
-)
+);
 console.log(promise);
+
+
+// promise
+
+
+promise
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log("Operation Finished");
+    });
+
+// Notes: 
+
+// * Hiding Loading indicators 
+
+// * Cleaning up resources/state
+// * Ending UI loading states 
+
+// Promise Chaninging 
+function getUser() {
+    return Promise.resolve("User Data");
+}
+
+function getOrders(user) {
+    return Promise.resolve("Orders of " + user);
+}
+
+function getPayment(orders) {
+    return Promise.resolve("Payment Done");
+}
+
+getUser()
+    .then(user => {
+        return getOrders(user);
+    })
+    .then(orders => {
+        return getPayment(orders);
+    })
+    .then(payment => {
+        console.log(payment);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+    
 
 
 

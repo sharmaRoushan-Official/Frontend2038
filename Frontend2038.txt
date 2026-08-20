@@ -5981,7 +5981,13 @@ Common Asynchrounous operations
 -------------------------------------------------
 
 
+Promise.all() --> Wait for all; reject if  one rejects. 
 
+Promse.allSettled() -> Wait for all; regardless success/failure
+
+Promise.reace()-> First settled Promise wins 
+
+Promise.any() -> First fulfilled Promise wins 
 
 
 
